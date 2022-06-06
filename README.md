@@ -28,7 +28,11 @@ Sunday/noon/MDT
 
 ## Vision Statement:
 
-Connecting farmers with people. Better food to every table. Sourcing and deindustrializing the mainstream food market. More samples for consumers. Decrease the barriers to entry for quality foods.
+* Connecting local farmers with their community.   
+* Fresher and tastier food for everybody.   
+* Sourcing and deindustrializing the mainstream food market.   
+* More free product sampling and better value for consumers.   
+* Decrease the barriers to entry for quality food products.  
 
 ## Motivations:
 
