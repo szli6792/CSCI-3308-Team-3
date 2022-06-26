@@ -1,5 +1,5 @@
 # CSCI-3308-Team-3
-## WEEKLY_STATUS.md (1st staus report)
+## WEEKLY_STATUS.md (1st status report)
 
 
 ## Weekly Schedule
