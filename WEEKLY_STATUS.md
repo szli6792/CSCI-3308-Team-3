@@ -10,7 +10,7 @@
 
 ### Upcoming Project Milestone:
 
-- Project milestone 3 sumbission (Jane 30 2022)
+- Project milestone 3 submission (June 30 2022)
 
 
 ### Group Tasks:
