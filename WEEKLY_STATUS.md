@@ -43,3 +43,7 @@
 - MongoDB
 - AWS
 - Figma
+
+### Weekly Team Recording:
+
+- https://drive.google.com/drive/folders/1szPAlQp_zB3sXS8hmV4rC_macotYin-y?usp=sharing
