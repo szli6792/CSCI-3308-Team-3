@@ -1,11 +1,18 @@
 import React from 'react';
 import './App.css';
-import NavBar from './NavBar';
+import NavBar from './Components/NavBar';
+import SearchBar from './Components/SearchBar';
+import FoodData from './FoodData.json';
 
 function App() {
   return (
     <div>
-      <NavBar />
+      <div>
+        <NavBar />
+      </div>
+      <div className="App">
+        <SearchBar placeholder="Test" data={FoodData} />
+      </div>
     </div>
   );
 }

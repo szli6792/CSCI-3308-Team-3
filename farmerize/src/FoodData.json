@@ -1,0 +1,14 @@
+{
+  "FoodData": [
+    {
+      "Name": "Name Test",
+      "Color": "Color Test",
+      "Weight": 123
+    },
+    {
+      "Name": "Name Test2",
+      "Color": "Color Test2",
+      "Weight": 1234
+    }
+  ]
+}
