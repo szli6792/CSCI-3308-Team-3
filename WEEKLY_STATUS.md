@@ -47,3 +47,50 @@
 ### Weekly Team Meeting Recording:
 
 - https://drive.google.com/drive/folders/1szPAlQp_zB3sXS8hmV4rC_macotYin-y?usp=sharing
+
+## WEEKLY_STATUS.md (2nd status report)
+
+
+## Weekly Schedule
+ 
+![image](https://user-images.githubusercontent.com/84056431/177187515-27ded0b6-ff07-4f6d-a6ec-730cc2eb9e98.png)
+
+
+### Upcoming Project Milestone:
+
+- Project milestone 4 submission (July 14 2022)
+
+
+### Group Tasks:
+
+- Work on Web Page descriptions for Milestone 4
+- Build components for web pages as to not duplicate code
+- Finish UI and build logos
+
+
+### Ethan Brown Individual Tasks:
+
+-  
+
+### Matt Fournier Individual Tasks:
+
+- Build react components for search and nav bars
+- Work on building user logon and webpage interactivity
+- Design databases
+
+### Szymon Ligas Individual Tasks:
+
+- 
+
+### Current Development Stack:
+
+- React
+- Node.js
+- Express.js
+- MongoDB
+- AWS
+- Figma
+
+### Weekly Team Meeting Recording:
+
+- 
