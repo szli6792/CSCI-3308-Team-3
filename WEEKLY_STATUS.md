@@ -70,7 +70,8 @@
 
 ### Ethan Brown Individual Tasks:
 
--  
+-  Build react components for about us page and email subscription bar as laid out in UI.
+-  Continue creating UI designs for any new pages and update current UI designs based on any new functionality we want to add.
 
 ### Matt Fournier Individual Tasks:
 
@@ -93,4 +94,13 @@
 
 ### Weekly Team Meeting Recording:
 
-- 
+- https://drive.google.com/drive/folders/1uVZ4dReRFxTyujzC5tEckeXjfSMwoQCv?usp=sharing
+
+
+### UI Design
+
+- https://drive.google.com/file/d/1n4POw7E0QUqYg-uhqa5K8yJRsslNLkZH/view?usp=sharing
+
+- Currently designed pages (homepage, search page, results page, product page, about us page, review cart page)
+- To be designed page (checkout page - awaiting decesion on API's, log in/out pages - awaiting decision on how much we want to build out)
+
