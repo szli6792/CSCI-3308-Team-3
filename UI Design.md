@@ -3,9 +3,9 @@
 
 - https://drive.google.com/file/d/1A79RGYc00QOJYWzJc49zVh_7pdWyE0Ql/view?usp=sharing
 
-- Currently designed pages (homepage, search page, results page, product page, about us page, review cart page)
+- Currently designed pages (homepage, search page, categories page, product page, about us page, review cart page)
 
-- To be designed pages (checkout page - awaiting decesion on API's, log in/out pages - awaiting decision on how much we want to build out)
+- To be designed pages (checkout page - awaiting decesion on API's, log in/out pages, wish-list page)
 
 # UI Theme (homepage example)
 
