@@ -21,15 +21,17 @@
 
 Link: https://www.figma.com/file/89jOTItK5FA3VZr2vBV6Pe/Farm-Marketplace-UI?node-id=0%3A1
 
-*** Generaly color scheme below. Exact page/component specifications can be viewed by opening the above file in Figma, selecting the area of interest and then clicking on inspect on the right hand side. The exact CSS specifications should then be outputted. 
+*** General color/font scheme below. Exact page/component specifications can be viewed by opening the above file in Figma, selecting the area of interest and then clicking on inspect on the right hand side. The exact CSS specifications should then be outputted. 
 
-- Typeography:
-font-family: Quicksand;
+Typeography:
 
-- Colors:
-Black:#253D4E
-White: #FFFFFF
-Grey: #E5E5E5
-Dark green:#3BB77E
-Light green: #DEF9EC
+- font-family: Quicksand;
+
+Colors:
+
+- Black:#253D4E
+- White: #FFFFFF
+- Grey: #E5E5E5
+- Dark green:#3BB77E
+- Light green: #DEF9EC
 
