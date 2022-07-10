@@ -1,14 +1,16 @@
 {
   "FoodData": [
     {
-      "Name": "Name Test",
-      "Color": "Color Test",
-      "Weight": 123
+      "name": "Name Test",
+      "color": "Color Test",
+      "weight": 123,
+      "link": "https://en.wikipedia.org/wiki/Food\n"
     },
     {
-      "Name": "Name Test2",
-      "Color": "Color Test2",
-      "Weight": 1234
+      "name": "Name Test2",
+      "color": "Color Test2",
+      "weight": 1234,
+      "link": "https://en.wikipedia.org/wiki/Food\n"
     }
   ]
 }

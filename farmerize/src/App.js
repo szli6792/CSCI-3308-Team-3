@@ -1,20 +1,25 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import NavBar from './Components/NavBar';
-import SearchBar from './Components/SearchBar';
+import SearchBar from './components/SearchBar';
 import FoodData from './FoodData.json';
+import NavBar from './components/NavBar';
+import Product from './pages/Product';
+import Home from './pages/Home';
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <div>
-        <NavBar />
-      </div>
-      <div className="App">
-        <SearchBar placeholder="Test" data={FoodData} />
-      </div>
-    </div>
+    // <div className="App">
+    //   <NavBar />
+    // </div>
+    <Router>
+      <NavBar />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/product" element={<Product />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
