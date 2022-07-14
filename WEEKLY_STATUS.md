@@ -83,7 +83,8 @@
 
 ### Szymon Ligas Individual Tasks:
 
-- 
+- Use Anima to automate HTML and CSS from Figma
+- Modify HTML for accessibility
 
 ### Current Development Stack:
 
