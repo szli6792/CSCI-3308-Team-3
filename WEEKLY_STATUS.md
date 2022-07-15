@@ -132,7 +132,9 @@
 
 ### Matt Fournier Individual Tasks:
 
--
+- Continue working on the Nav Bar and Search bar
+- Work on the web page routing and architecture
+- Start work on homepage
 
 ### Szymon Ligas Individual Tasks:
 
