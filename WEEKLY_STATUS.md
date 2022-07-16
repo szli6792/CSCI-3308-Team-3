@@ -1,5 +1,5 @@
 # CSCI-3308-Team-3
-## WEEKLY_STATUS.md (1st status report)
+## WEEKLY_STATUS.md (1st status report: June 26 - July 2)
 
 
 ## Weekly Schedule
@@ -50,7 +50,7 @@
 
 
 
-## WEEKLY_STATUS.md (2nd status report)
+## WEEKLY_STATUS.md (2nd status report: July 3 - July 9)
 
 
 ## Weekly Schedule
@@ -109,7 +109,7 @@
 
 
 
-## WEEKLY_STATUS.md (3rd status report)
+## WEEKLY_STATUS.md (3rd status report: July 10 - July 16)
 
 
 ## Weekly Schedule
