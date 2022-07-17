@@ -1,0 +1,9 @@
+.arrow {
+  border-radius: 30px 30px 30px 30px;
+  background-color: green;
+}
+
+.item-row {
+  display: flex;
+  flex-direction: row;
+}

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700,500,600');
+
+.overlap-group2 {
+  align-items: flex-start;
+  display: flex;
+  background-color: #e2e2e2c7;
+  height: 477px;
+  justify-content: flex-start;
+  padding: 14.6px 49.7px;
+  z-index: 1;
+}
+
+.flex-col {
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1px;
+  min-height: 298px;
+  width: 532px;
+}
+
+.hero-headline {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  height: min-content;
+  justify-content: center;
+  width: min-content;
+}
+
+.top-quality-produce {
+  width: 532px;
+  margin-bottom: 50px;
+  font-family: var(--font-family-quicksand);
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: -0.45px;
+  margin-top: -1px;
+}
+
+.subscribe-fromz {
+  align-items: flex-start;
+  display: flex;
+  height: min-content;
+  flex-direction: row;
+  margin-left: 3px;
+  margin-top: 78px;
+  width: min-content;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-form {
+  align-items: center;
+  display: flex;
+  background-color: white;
+  border-radius: 2px;
+  gap: 12px;
+  height: 52px;
+  padding: 12px;
+  width: 400px;
+}
+
+.frame-4 {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  height: min-content;
+  justify-content: center;
+  width: min-content;
+}
+
+.email-entry {
+  letter-spacing: 0px;
+  margin-top: -1px;
+  min-width: 300px;
+  padding: 15px;
+  outline: none;
+  border: none;
+  background: white;
+}
+
+.subscribe-btn {
+  align-items: center;
+  background-color: #3bb77e;
+  border-radius: 0px 2px 2px 0px;
+  display: flex;
+  gap: 9px;
+  height: 52px;
+  justify-content: center;
+  padding: 14px;
+  width: 108px;
+}
+
+.subscribe {
+  color: white;
+  background: none;
+  border: none;
+  font-family: var(--font-family-quicksand);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  letter-spacing: 0;
+  min-width: 75px;
+}
+
+.subscribe:hover {
+  cursor: pointer;
+}
+
+.featured-deals {
+  margin-top: 75px;
+  min-height: 40px;
+  padding: 14.6px 49.7px;
+}
+
+.featured-deals-header {
+  font-family: var(--font-family-quicksand);
+  font-size: 32px;
+  letter-spacing: 0px;
+}
+
+.featured-deals-row {
+  display: flex;
+  flex-direction: row;
+}
