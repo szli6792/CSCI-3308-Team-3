@@ -184,7 +184,9 @@
 
 ### Matt Fournier Individual Tasks:
 
--
+- build database and connect it to the react app with express
+- finish login/user creation page
+- complete homepage
 
 ### Szymon Ligas Individual Tasks:
 
