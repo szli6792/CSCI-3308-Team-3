@@ -160,3 +160,53 @@
 - Currently designed pages (homepage, search page, results page, product page, about us page, review cart page)
 - To be designed page (Log in / sign up pages, checkout page - awaiting decesion on API's)
 
+
+
+## WEEKLY_STATUS.md (4th status report: July 17 - July 23)
+
+
+## Weekly Schedule
+ 
+<img width="1551" alt="Screen Shot 2022-07-19 at 22 25 42" src="https://user-images.githubusercontent.com/97766930/179882665-439dcdb2-61c4-4e30-ad96-b2a1ad297306.png">
+
+### Upcoming Project Milestone:
+
+- Project milestone 5 submission (July 28 2022)
+
+### Group Tasks:
+
+- Finish creating and editing SQL_TESTING.md for project milestone 5, which discusses the design of out SQL database.
+- Continue building the first 5 web-pages and keep the main branch of our Git repository updated with each others work.
+
+### Ethan Brown Individual Tasks:
+
+-
+
+### Matt Fournier Individual Tasks:
+
+-
+
+### Szymon Ligas Individual Tasks:
+
+- 
+
+### Current Development Stack:
+
+- React
+- Node.js
+- Express.js
+- MongoDB
+- AWS
+- Figma
+
+### Weekly Team Meeting Recording:
+
+- 
+
+### UI Design
+
+- https://www.figma.com/file/89jOTItK5FA3VZr2vBV6Pe/Farm-Marketplace-UI?node-id=0%3A1
+
+- Currently designed pages (homepage, search page, results page, product page, about us page, review cart page)
+- To be designed page (checkout page - awaiting decesion on API's)
+
