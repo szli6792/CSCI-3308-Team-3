@@ -180,7 +180,9 @@
 
 ### Ethan Brown Individual Tasks:
 
--
+- Update UI for product page.
+- Finish react for About us page / Subscription component.
+- Work on react for Results page.
 
 ### Matt Fournier Individual Tasks:
 
@@ -203,7 +205,7 @@
 
 ### Weekly Team Meeting Recording:
 
-- 
+- https://drive.google.com/drive/folders/1BVTLUGyv9-UhJtiROnn4x2lUAWby-1z2?usp=sharing
 
 ### UI Design
 
