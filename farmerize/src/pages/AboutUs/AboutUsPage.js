@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { css } from "styled-components";
 import "./AboutUsPage.css";
+import SubBar from '../../components/SubBar.jsx';
 
 export const QuicksandMediumSilverChalice14px = css`
   color: var(--silver-chalice);
@@ -35,84 +36,64 @@ export const QuicksandSemiBoldBlack32px = css`
   font-style: normal;
 `;
 
-function AboutUsPage(props) {
-  const {
+function AboutUsPage(props) 
+{
+  const 
+  {
     loremIpsumDolorSi1,
     overlapGroup4,
     line1,
     connectingLocalFar,
-    vector2,
-    vector3,
+    img1,
+    img2,
     ourStory,
     loremIpsumDolorSi2,
     line3,
     line4,
     joinOurTeam,
-    vector5,
+    img3,
     loremIpsumDolorSi3,
-    liSend,
-    enterYourEmailAddress,
-    subscribe,
     ourMission,
-    vector6,
-  } = props;
+    img4,
+  } 
+  = props;
 
   return (
-    <div className="container-center-horizontal">
-      <div className="about-us-page screen">
-        <OverlapGroup1>
-          <LoremIpsumDolorSi>{loremIpsumDolorSi1}</LoremIpsumDolorSi>
-          <OverlapGroup4 style={{ backgroundImage: `url(${overlapGroup4})` }}>
-            <Line1 src={line1} />
-          </OverlapGroup4>
-          <ConnectingLocalFar>{connectingLocalFar}</ConnectingLocalFar>
-        </OverlapGroup1>
-        <Vector2 src={vector2} />
-        <Vector3 src={vector3} />
-        <FlexRow>
-          <FlexCol>
-            <OurStory>{ourStory}</OurStory>
-            <LoremIpsumDolorSi1>{loremIpsumDolorSi2}</LoremIpsumDolorSi1>
-          </FlexCol>
-          <LineContainer>
-            <Line3 src={line3} />
-            <Line4 src={line4} />
-          </LineContainer>
-        </FlexRow>
-        <OverlapGroup2>
-          <OverlapGroup5>
-            <Vector5 src={vector5} />
-            <HeroBg></HeroBg>
-            <OurMission>{ourMission}</OurMission>
-            <LoremIpsumDolorSi2>{loremIpsumDolorSi3}</LoremIpsumDolorSi2>
-            <JoinOurTeam>{joinOurTeam}</JoinOurTeam>
-            <SubscribeFormz>
-              <NewsletterForm>
-                <Lisend src={liSend} />
-                <Frame4>
-                  <EnterYourEmailAddress>{enterYourEmailAddress}</EnterYourEmailAddress>
-                </Frame4>
-              </NewsletterForm>
-              <SubscribeBtn>
-                <Subscribe>{subscribe}</Subscribe>
-              </SubscribeBtn>
-            </SubscribeFormz>
-          </OverlapGroup5>
-        </OverlapGroup2>
-        <Vector6 src={vector6} />
-      </div>
+    <div className="about-us-page screen">
+      <OverlapGroup1>
+        <LoremIpsumDolorSi>{loremIpsumDolorSi1}</LoremIpsumDolorSi>
+        <OverlapGroup4 style={{ backgroundImage: `url(${overlapGroup4})` }}>
+          <Line1 src={line1} />
+        </OverlapGroup4>
+        <ConnectingLocalFar>{connectingLocalFar}</ConnectingLocalFar>
+      </OverlapGroup1>
+      <Img1 src={img1} />
+      <Img2 src={img2} />
+      <FlexRow>
+        <FlexCol>
+          <OurStory>{ourStory}</OurStory>
+          <LoremIpsumDolorSi1>{loremIpsumDolorSi2}</LoremIpsumDolorSi1>
+        </FlexCol>
+        <LineContainer>
+          <Line3 src={line3} />
+          <Line4 src={line4} />
+        </LineContainer>
+      </FlexRow>
+      <OverlapGroup2>
+        <OverlapGroup5>
+          <Img3 src={img3} />
+          <HeroBg>
+          </HeroBg>
+          <OurMission>{ourMission}</OurMission>
+          <LoremIpsumDolorSi2>{loremIpsumDolorSi3}</LoremIpsumDolorSi2>
+          <JoinOurTeam>{joinOurTeam}</JoinOurTeam>
+          <SubBar />
+        </OverlapGroup5>
+      </OverlapGroup2>
+      <Img4 src={img4} />
     </div>
   );
 }
-
-const Frame4 = styled.div`
-  display: flex;
-  width: min-content;
-  height: min-content;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-`;
 
 const OverlapGroup1 = styled.div`
   width: 1440px;
@@ -158,7 +139,7 @@ const ConnectingLocalFar = styled.h1`
   letter-spacing: -0.45px;
 `;
 
-const Vector2 = styled.img`
+const Img1 = styled.img`
   position: fixed;
   width: 1440px;
   height: 1px;
@@ -167,7 +148,7 @@ const Vector2 = styled.img`
   z-index: 7;
 `;
 
-const Vector3 = styled.img`
+const Img2 = styled.img`
   position: fixed;
   width: 1440px;
   height: 1px;
@@ -258,7 +239,7 @@ const OverlapGroup5 = styled.div`
   left: 0;
 `;
 
-const Vector5 = styled.img`
+const Img3 = styled.img`
   position: absolute;
   width: 1002px;
   height: 2px;
@@ -272,60 +253,6 @@ const LoremIpsumDolorSi2 = styled.div`
   width: 643px;
   top: 153px;
   left: 69px;
-  letter-spacing: 0;
-`;
-
-const SubscribeFormz = styled.div`
-  display: flex;
-  width: min-content;
-  height: min-content;
-  align-items: flex-start;
-  position: absolute;
-  top: 221px;
-  left: 942px;
-`;
-
-const NewsletterForm = styled.div`
-  display: flex;
-  width: 329px;
-  height: 52px;
-  align-items: center;
-  gap: 12px;
-  padding: 12px;
-  background-color: var(--white);
-  border-radius: 2px;
-`;
-
-const Lisend = styled.img`
-  min-width: 18px;
-  height: 18px;
-`;
-
-const EnterYourEmailAddress = styled.div`
-  ${QuicksandMediumSilverChalice14px}
-  min-width: 165px;
-  margin-top: -1px;
-  letter-spacing: 0;
-`;
-
-const SubscribeBtn = styled.div`
-  display: flex;
-  width: 108px;
-  height: 52px;
-  align-items: center;
-  justify-content: center;
-  gap: 9px;
-  padding: 14px;
-  background-color: #d4d4d4;
-  border-radius: 0px 2px 2px 0px;
-`;
-
-const Subscribe = styled.div`
-  min-width: 75px;
-  font-family: var(--font-family-quicksand);
-  font-weight: 600;
-  color: var(--white);
-  font-size: var(--font-size-xs);
   letter-spacing: 0;
 `;
 
@@ -346,7 +273,7 @@ const OurMission = styled.div`
   letter-spacing: 0;
 `;
 
-const Vector6 = styled.img`
+const Img4 = styled.img`
   width: 1202px;
   height: 2px;
   z-index: 4;

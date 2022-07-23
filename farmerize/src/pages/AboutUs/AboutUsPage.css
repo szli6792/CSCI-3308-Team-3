@@ -1,35 +1,13 @@
-
 @import url("https://fonts.googleapis.com/css?family=Quicksand:700,500,600");
 
-.screen a {
-  display: contents;
-  text-decoration: none;
-}
-
-.container-center-horizontal {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  pointer-events: none;
-  width: 100%;
-}
-
-.container-center-horizontal > * {
-  flex-shrink: 0;
-  pointer-events: auto;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-:root { 
+:root 
+{ 
   --black: #000000;
   --blue-dianne: #253d4e;
   --jungle-green: #3bb77e;
   --silver-chalice: #adadad;
   --white: #ffffff;
- 
+  
   --font-size-l: 32px;
   --font-size-m: 24px;
   --font-size-s: 21px;
@@ -41,7 +19,8 @@
   --font-family-quicksand: "Quicksand", Helvetica;
 }
 
-.about-us-page {
+.about-us-page 
+{
     align-items: center;
     background-color: var(--white);
     display: flex;
