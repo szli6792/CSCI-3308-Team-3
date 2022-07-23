@@ -7,7 +7,7 @@ import NavBar from './components/NavBar';
 import Product from './pages/Product';
 import Home from './pages/Home';
 import Login from './pages/Login';
-import AboutUsPage from "./pages/AboutUs/AboutUsPage.js";
+import AboutUsPage from "./pages/AboutUsPage.jsx";
 
 const App = () => {
   return (
