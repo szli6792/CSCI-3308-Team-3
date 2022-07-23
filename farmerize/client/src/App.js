@@ -8,6 +8,7 @@ import Product from './pages/Product';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import AboutUsPage from "./pages/AboutUs/AboutUsPage.js";
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route exact path="/aboutus" element={<AboutUsPage {...aboutUsPageData} />}/>
         <Route exact path="/login" element={<Login />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };
