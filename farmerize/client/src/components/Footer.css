@@ -1,0 +1,256 @@
+/* screen - 5_3025 */
+
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700,500,600");
+
+* {
+    box-sizing: border-box;
+  }
+
+:root { 
+    --black: #000000;
+    --blue-dianne: #253d4e;
+    --jungle-green: #3bb77e;
+    --silver-chalice: #adadad;
+   
+    --font-size-l: 24px;
+    --font-size-l2: 14px;
+    --font-size-xl: 28px;
+    --font-size-xl2: 16px;
+   
+    --font-family-quicksand: "Quicksand", Helvetica;
+  }
+  .quicksand-medium-blue-dianne-16px {
+    color: var(--blue-dianne);
+    font-family: var(--font-family-quicksand);
+    font-size: var(--font-size-xl2);
+    font-style: normal;
+    font-weight: 500;
+  }
+  
+  .quicksand-semi-bold-blue-dianne-16px {
+    color: var(--blue-dianne);
+    font-family: var(--font-family-quicksand);
+    font-size: var(--font-size-xl2);
+    font-style: normal;
+    font-weight: 600;
+  }
+  
+  .quicksand-medium-silver-chalice-14px {
+    color: var(--silver-chalice);
+    font-family: var(--font-family-quicksand);
+    font-size: var(--font-size-l2);
+    font-style: normal;
+    font-weight: 500;
+  }
+  
+.flex-col-1 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3px;
+    min-height: 1756px;
+    width: 1233px;
+    justify-content: center;
+  }
+
+.footer {
+    border-top: 1px solid rgba(156, 138, 138, 0.5);
+    align-items: flex-start;
+    align-self: center;
+    display: flex;
+    gap: 857px;
+    height: min-content;
+    margin-left: 15px;
+    margin-top: 60px;
+    width: 100%;
+    padding: 15px;
+    align-items: center;
+    margin:auto;
+  }
+  
+  .frame-87 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    height: 288px;
+    width: 234px;
+    margin:auto;
+  }
+  
+  .logo {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    width: min-content;
+  }
+  
+  .frame-1 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+    justify-content: center;
+    width: min-content;
+  }
+  
+  .title {
+    color: var(--jungle-green);
+    font-family: var(--font-family-quicksand);
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    letter-spacing: 0;
+    margin-top: -1px;
+  }
+  
+  .grocery {
+    letter-spacing: 0;
+  }
+  
+  .frame-86 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    height: min-content;
+    width: min-content;
+  }
+  
+  .group-14 {
+    height: 20px;
+    min-width: 210px;
+    position: relative;
+  }
+  
+  .frame-7 {
+    align-items: center;
+    display: flex;
+    gap: 3px;
+    height: min-content;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: min-content;
+  }
+  
+  .limap-pin {
+    height: 18px;
+    min-width: 18px;
+  }
+  
+  .address {
+    letter-spacing: 0;
+    margin-top: -1px;
+  }
+  
+  .address-1 {
+    left: 93px;
+    letter-spacing: 0;
+    position: absolute;
+    top: 0;
+  }
+  
+  .group-15 {
+    height: 20px;
+    min-width: 194px;
+    position: relative;
+  }
+  
+  .liphone {
+    height: 18px;
+    min-width: 18px;
+  }
+  
+  .phone {
+    letter-spacing: 0;
+    margin-top: -1px;
+  }
+  
+  .phone-1 {
+    left: 93px;
+    letter-spacing: 0;
+    position: absolute;
+    top: 0;
+  }
+  
+  .group-16 {
+    height: 20px;
+    margin-right: -2px;
+    min-width: 236px;
+    position: relative;
+  }
+  
+  .limail {
+    height: 18px;
+    min-width: 18px;
+  }
+  
+  .email {
+    letter-spacing: 0;
+    margin-top: -1px;
+  }
+  
+  .farmerizefoodcom {
+    left: 74px;
+    letter-spacing: 0;
+    position: absolute;
+    top: 0;
+  }
+  
+  .frame-83 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 226px;
+    justify-content: space-between;
+    width: min-content;
+    margin:auto;
+  }
+  
+  .directory {
+    color: var(--blue-dianne);
+    font-family: var(--font-family-quicksand);
+    font-size: var(--font-size-l);
+    font-weight: 600;
+    letter-spacing: 0;
+    margin-top: -1px;
+  }
+  
+  .frame-82 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+    justify-content: space-between;
+    width: min-content;
+  }
+  
+  .about-us {
+    letter-spacing: 0;
+    margin-top: -1px;
+  }
+  
+  .categories {
+    letter-spacing: 0;
+  }
+  
+  .my-cart {
+    letter-spacing: 0;
+  }
+  
+  .my-wish-list {
+    letter-spacing: 0;
+  }
+  
+  .my-account {
+    letter-spacing: 0;
+  }
+
+  .farmerize-1 {
+    color: var(--jungle-green);
+    font-family: var(--font-family-quicksand);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0;
+    margin-top: 27px;
+  }
