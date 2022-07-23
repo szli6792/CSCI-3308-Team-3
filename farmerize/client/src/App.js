@@ -7,7 +7,7 @@ import NavBar from './components/NavBar';
 import Product from './pages/Product';
 import Home from './pages/Home';
 import Login from './pages/Login';
-import AboutUsPage from "./pages/AboutUsPage.js";
+import AboutUsPage from "./pages/AboutUsPage.jsx";
 import Footer from './components/Footer'
 
 const App = () => {
