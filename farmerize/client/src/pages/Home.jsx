@@ -6,7 +6,7 @@ import { useFetch } from '../utils/hook';
 
 const Home = () => {
   
-  const [data] = useFetch('/api/testsql');
+  const [data] = useFetch('/api/sql?table=users&first='+first);
   console.log(data)
 
   return (
