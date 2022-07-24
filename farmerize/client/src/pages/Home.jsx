@@ -6,8 +6,8 @@ import { usePost } from '../utils/post';
 
 const Home = () => {
   
-  const resp = usePost('/api/sql/subscribe?email="test@gmail.com"');
-  console.log(resp)
+  // const resp = usePost('/api/sql/subscribe?email="test@gmail.com"');
+  // console.log(resp)
 
   return (
     <div>
