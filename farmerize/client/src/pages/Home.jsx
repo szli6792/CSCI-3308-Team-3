@@ -2,8 +2,13 @@ import React from 'react';
 import send from '../assets/li-send.svg';
 import './Home.css';
 import Scroll from '../components/Scroll';
+import { useFetch } from '../utils/hook';
 
 const Home = () => {
+  
+  const [data] = useFetch('/api/testsql');
+  console.log(data)
+
   return (
     <div>
       <div className="overlap-group2">
