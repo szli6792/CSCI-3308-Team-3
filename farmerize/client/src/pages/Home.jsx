@@ -2,12 +2,12 @@ import React from 'react';
 import send from '../assets/li-send.svg';
 import './Home.css';
 import Scroll from '../components/Scroll';
-import { useFetch } from '../utils/hook';
+import { usePost } from '../utils/post';
 
 const Home = () => {
   
-  const [data] = useFetch('/api/sql?table=users&first='+first);
-  console.log(data)
+  const resp = usePost('/api/sql/subscribe?email="test@gmail.com"');
+  console.log(resp)
 
   return (
     <div>

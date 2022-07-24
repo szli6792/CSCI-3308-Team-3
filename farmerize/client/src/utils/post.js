@@ -1,26 +1,26 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function usePost(url) {
 
-    const [data, setData] = useState([]);
+    const [data, setStatus] = useState([]);
     async function fetchUrl() {
         const requestOptions = {
-            method: 'Post'
+            method: 'Post',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            }
         }
         const response = await fetch(url, requestOptions);
-        const json = await response.json();
-        setData(json);
+        const json = await response;
+        setStatus(response.status);
     }
-
-    useEffect(() => {
-        fetchUrl();
-    }, []);
     
     useEffect(() => {
         fetchUrl();
     }, [url]);
 
-    return [data];
+    return data;
 
 }
 

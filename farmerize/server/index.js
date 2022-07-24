@@ -120,14 +120,14 @@ app.get('/api/sql/gethighest', (req,res,next) => {
 	});
 });
 
-app.post('api/sql/subscribe', (req, res, next) => {
+app.post('/api/sql/subscribe', (req, res, next) => {
 	sql.connect(config, err => {
 		if (err) {
 			console.log('Failed to establish Database connection.', err.stack);
 			next(err);
 		}
 		const email = req.query.email;
-		const query = `INSERT INTO farmerize.dbo.subscriptions (Email) VALUES (`+email+`)`;
+		const query = `INSERT INTO farmerize.dbo.subscriptions (Email) VALUES ('`+email+`')`;
 		const request = new sql.Request();
 		request.query(query, (err, result) => {
 			if (err) {
@@ -135,13 +135,14 @@ app.post('api/sql/subscribe', (req, res, next) => {
 				next(err);
 			}
 			else {
-				res.json(result.recordsets[0]);
+				console.log('inserted email')
+				res.json(200);
 			}
 		});
 	});
 });
 
-app.post('api/sql/createuser', (req, res, next) => {
+app.post('/api/sql/createuser', (req, res, next) => {
 	sql.connect(config, err => {
 		if (err) {
 			console.log('Failed to establish Database connection.', err.stack);
@@ -154,7 +155,7 @@ app.post('api/sql/createuser', (req, res, next) => {
 		const address = req.query.address;
 		const age = req.query.age;
 		const password = req.query.password;
-		const query = `INSERT INTO farmerize.dbo.users (UserID, First, Last, Phone, Email, Address, Age, Password) VALUES (`+null+`,`+first+`,`+last+`,`+phone+`,`+email+`,`+address+`,`+age+`,`+password+`)`;
+		const query = `INSERT INTO farmerize.dbo.users (UserID, First, Last, Phone, Email, Address, Age, Password) VALUES (`+null+`,'`+first+`','`+last+`','`+phone+`','`+email+`','`+address+`',`+age+`,'`+password+`')`;
 		const request = new sql.Request();
 		request.query(query, (err, result) => {
 			if (err) {
@@ -162,7 +163,8 @@ app.post('api/sql/createuser', (req, res, next) => {
 				next(err);
 			}
 			else {
-				res.json(result.recordsets[0]);
+				res.json(200);
+				console.log('inserted user')
 			}
 		});
 	});
