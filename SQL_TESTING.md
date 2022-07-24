@@ -190,7 +190,7 @@ About Us Page:
  - Parameters: Email.
  - return values: None.
  - List of tests for verifying each access method:
-   - Use case name
+  - Use case name
   
   - Description
 
@@ -214,7 +214,7 @@ My Account Page:
  - Parameters: User Table (First, Last, Phone, Email, Address, Age, Password).
  - return values: Status 200.
  - List of tests for verifying each access method:
-   - Use case name
+  - Use case name
   
   - Description
 
@@ -238,7 +238,7 @@ Product Page:
  - Parameters: Reviews Table (Rating, Review), Products Table (Name, Category, Picture, Price, Review, Name, About), Farms Table (Name, About).
  - return values: Status 200.
  - List of tests for verifying each access method:
-   - Use case name
+  - Use case name
   
   - Description
 
@@ -262,7 +262,7 @@ Results Page:
  - Parameters: User entered string within the search bar.
  - return values: Product Table (Name, Category, Picture, Price, Review, Name), Farm Table (Name).
  - List of tests for verifying each access method:
-   - Use case name
+  - Use case name
   
   - Description
 
