@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import AboutUsPage from "./pages/AboutUsPage.jsx";
 import Footer from './components/Footer'
+import MyAccount from "./pages/MyAccount";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/product" element={<Product />} />
+        <Route exact path="/myaccount" element={<MyAccount />} />
         <Route exact path="/aboutus" element={<AboutUsPage {...aboutUsPageData} />}/>
         <Route exact path="/login" element={<Login />} />
       </Routes>

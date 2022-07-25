@@ -155,7 +155,7 @@ app.post('/api/sql/createuser', (req, res, next) => {
 		const address = req.query.address;
 		const age = req.query.age;
 		const password = req.query.password;
-		const query = `INSERT INTO farmerize.dbo.users (UserID, First, Last, Phone, Email, Address, Age, Password) VALUES (`+null+`,'`+first+`','`+last+`','`+phone+`','`+email+`','`+address+`',`+age+`,'`+password+`')`;
+		const query = `INSERT INTO farmerize.dbo.users (First, Last, Phone, Email, Address, Age, Password) VALUES ('`+first+`','`+last+`','`+phone+`','`+email+`','`+address+`',`+age+`,'`+password+`')`;
 		const request = new sql.Request();
 		request.query(query, (err, result) => {
 			if (err) {

@@ -39,8 +39,10 @@ const MyAccount = () => {
         console.log(password)
 
         // commits to server
-        const resp = usePost('/api/sql/createuser?first=' + firstName + '&last=' + lastName + '&phone=' + phone + '&email=' + email + '&address=' + address + '&age=' + age + '&password=' + password);
+        
+        const resp = fetch('/api/sql/createuser?first=' + firstName + '&last=' + lastName + '&phone=' + phone + '&email=' + email + '&address=' + address + '&age=' + age + '&password=' + password, {  method: 'Post' });
         console.log(resp)
+
     }
 
   return (
@@ -100,7 +102,6 @@ const MyAccount = () => {
                     name='phone'
                     required
                     value={phone}
-                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                     onChange={(e) => setPhone(e.target.value)}
                     class="rect">
                 </input>
