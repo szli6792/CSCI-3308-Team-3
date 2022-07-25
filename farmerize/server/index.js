@@ -170,6 +170,30 @@ app.post('/api/sql/createuser', (req, res, next) => {
 	});
 });
 
+app.post('/api/sql/createreview', (req, res, next) => {
+	sql.connect(config, err => {
+		if (err) {
+			console.log('Failed to establish Database connection.', err.stack);
+			next(err);
+		}
+		const productID = req.query.productID;
+		const review = req.query.review;
+		const rating = req.query.rating;
+		const query = `INSERT INTO farmerize.dbo.reviews (ProductID, Review, Rating) VALUES ('`+productID+`','`+review+`','`+rating+`')`;
+		const request = new sql.Request();
+		request.query(query, (err, result) => {
+			if (err) {
+				console.log('Query Failed', err.stack);
+				next(err);
+			}
+			else {
+				res.json(200);
+				console.log('inserted user')
+			}
+		});
+	});
+});
+
 app.use(express.static(path.join(__dirname, '../client/build')));
 app.get('*', (req, res) => {
 	console.log('test');
