@@ -4,6 +4,8 @@ import { usePost } from '../utils/post';
 
 const MyAccount = () => {
 
+//init form input
+
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState('');
     const [phone, setPhone] = useState('');
@@ -11,14 +13,23 @@ const MyAccount = () => {
     const [address, setAddress] = useState('');
     const [age, setAge] = useState('');
     const [password, setPassword] = useState('');
+    const [confirm, setConfirm] = useState('');
 
+// Add checks for form input here
 
+    var match = true;
+    if (confirm != password) {
+        match = false;
+    }
 
+//execute submit form    
 
     const handleSubmit = (e) => {
         e.preventDefault();
         
-        alert('You have submitted');
+        alert('Your account has been opened. Welcome to Farmerize!');
+
+        // should be removed/obfuscated before release, good for testing
         console.log(firstName)
         console.log(lastName)
         console.log(phone)
@@ -27,81 +38,77 @@ const MyAccount = () => {
         console.log(age)
         console.log(password)
 
-        const submitFirstName = usePost('/api/sql/subscribe?email=' + firstName);
-        console.log(submitFirstName)
-        const submitLastName = usePost('/api/sql/subscribe?email=' + lastName);
-        console.log(submitLastName)
-        const submitPhone  = usePost('/api/sql/subscribe?email=' + phone);
-        console.log(submitPhone)
-        const submitEmail = usePost('/api/sql/subscribe?email=' + email);
-        console.log(submitEmail)
-        const submitAddress = usePost('/api/sql/subscribe?email=' + address);
-        console.log(submitAddress)
-        const submitAge = usePost('/api/sql/subscribe?email=' + age);
-        console.log(submitAge)
-        const submitPassword = usePost('/api/sql/subscribe?email=' + password);
-        console.log(submitPassword)
+        // commits to server
+        const resp = usePost('/api/sql/createuser?first=' + firstName + '&last=' + lastName + '&phone=' + phone + '&email=' + email + '&address=' + address + '&age=' + age + '&password=' + password);
+        console.log(resp)
     }
 
   return (
     <div class="my-account-page">
-        <form>
+        <form onSubmit={handleSubmit}>
         <h1 class="create-your-profile">Create your <br />profile</h1>
 
         <div class="st-name-container">
-          <div class="first-name quicksand-semi-bold-mirage-39px">First Name</div>
-          <div class="last-name quicksand-semi-bold-mirage-39px">Last Name</div>
+          <label class="first-name quicksand-semi-bold-mirage-39px" for="firstName">First Name</label>
+          <label class="last-name quicksand-semi-bold-mirage-39px" for="lastName">Last Name</label>
         </div>
 
         <div class="light-contained-defa">
-            <label class="light-contained-default-default">
-                <p style={{color: "red"}}>{false ? "" : "Username error"}</p>
+            <div class="light-contained-default-default">
+                <p style={{color: "red"}}>{true ? "" : "Username error"}</p>
                 <input 
                     type='text'
                     id='firstName'
                     name='firstName'
                     required
                     value={firstName}
+                    minlength="2"
                     onChange={(e) => setFirstName(e.target.value)}
+                    pattern="[A-Z][a-zA-Z\s]*"
+                    title="Legal First Name"
                     class="rect">
                 </input>
-            </label>
-            <label class="light-contained-default-default-1">
-                <p style={{color: "red"}}>{false ? "" : "Username error"}</p>
+            </div>
+            <div class="light-contained-default-default-1">
+                <p style={{color: "red"}}>{true ? "" : "Username error"}</p>
                 <input
                     type='text'
                     id='lastName'
                     name='lastName'
                     required
                     value={lastName}
+                    minlength="2"
                     onChange={(e) => setLastName(e.target.value)}
+                    pattern="[A-Z][a-zA-Z\s]*"
+                    title="Legal Surname"
                     class="rect-1">
                 </input>
-            </label>
+            </div>
         </div>
           
         <div class="flex-row">
-            <div class="phone quicksand-semi-bold-mirage-39px">Phone</div>
-            <div class="email-adress quicksand-semi-bold-mirage-39px">Email Address</div>
+            <label class="phone quicksand-semi-bold-mirage-39px" for="phone">Phone</label>
+            <label class="email-adress quicksand-semi-bold-mirage-39px" for="email">Email Address</label>
         </div>
         
         <div class="light-contained-defa-1">
-            <label class="light-contained-default-default">
-                <p style={{color: "red"}}>{false ? "" : "Username error"}</p>
+            <div class="light-contained-default-default">
+                <p style={{color: "red"}}>{true ? "" : "Username error"}</p>
                 <input 
-                    type='text'
+                    type='tel'
                     id='phone'
                     name='phone'
                     required
                     value={phone}
+                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                     onChange={(e) => setPhone(e.target.value)}
                     class="rect">
                 </input>
-            </label>
-            <label class="light-contained-default-default-1">
-                <p style={{color: "red"}}>{false ? "" : "Username error"}</p>
+            </div>
+            <div class="light-contained-default-default-1">
+                <p style={{color: "red"}}>{true ? "" : "Username error"}</p>
                 <input
-                    type='text'
+                    type='email'
                     id='email'
                     name='email'
                     required
@@ -109,17 +116,17 @@ const MyAccount = () => {
                     onChange={(e) => setEmail(e.target.value)}
                     class="rect-1">
                 </input>
-            </label>
+            </div>
         </div>
         
         <div class="flex-row-1">
-              <div class="adress quicksand-semi-bold-mirage-39px">Address</div>
-              <div class="age quicksand-semi-bold-mirage-39px">Age</div>
+              <label class="adress quicksand-semi-bold-mirage-39px" for="address">Address</label>
+              <label class="age quicksand-semi-bold-mirage-39px" for="age">Age</label>
         </div>
 
         <div class="light-contained-defa-2">
-            <label class="light-contained-default-default">
-                <p style={{color: "red"}}>{false ? "" : "Username error"}</p>
+            <div class="light-contained-default-default">
+                <p style={{color: "red"}}>{true ? "" : "Username error"}</p>
                 <input 
                     type='text'
                     id='address'
@@ -129,9 +136,9 @@ const MyAccount = () => {
                     onChange={(e) => setAddress(e.target.value)}
                     class="rect">
                 </input>
-            </label>
-            <label class="light-contained-default-default-1">
-                <p style={{color: "red"}}>{false ? "" : "Username error"}</p>
+            </div>
+            <div class="light-contained-default-default-1">
+                <p style={{color: "red"}}>{true ? "" : "Username error"}</p>
                 <input
                     type='text'
                     id='age'
@@ -141,31 +148,42 @@ const MyAccount = () => {
                     onChange={(e) => setAge(e.target.value)}
                     class="rect-1">
                 </input>
-            </label>
+            </div>
         </div>
         
         <div class="password quicksand-semi-bold-mirage-39px">Password</div>
         
         <label class="light-contained-default-default-2">
-            <p style={{color: "red"}}>{false ? "" : "Username error"}</p>
             <input 
-                class="rect-2"
-                required>
+                type='password'
+                id='password'
+                name='password'
+                value={password}
+                required
+                title="Must be alphanumeric"
+                onChange={(e) => setPassword(e.target.value)}
+                class="rect-2">
             </input>
         </label>
         
         <div class="confirm-password quicksand-semi-bold-mirage-39px">Confirm Password</div>
 
         <label class="light-contained-default-default-3">
-            <p style={{color: "red"}}>{false ? "" : "Username error"}</p>
-            <input 
-                class="rect-2"
-                required>
+            <p style={{color: "red"}}>{match ? "" : "Passwords do not match"}</p>
+            <input
+                type='password'
+                id='password'
+                name='confirm'
+                value={confirm}
+                required
+                title="Must match password above"
+                onChange={(e) => setConfirm(e.target.value)}
+                class="rect-2">
             </input>
         </label>
         
         <div class="create-button">
-            <button type= "submit" onSubmit={handleSubmit}><div class="label valign-text-middle">Create Account</div></button>
+            <button type= "submit"><div class="label valign-text-middle">Create Account</div></button>
         </div>
 
         <div class="empty"></div>
