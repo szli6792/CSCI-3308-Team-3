@@ -1,0 +1,26 @@
+[
+{
+    "Name" : "Food 1",
+    "Seller" : "Farm X",
+    "Description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare et odio et urna sed. Ante pellentesque justo, odio imperdiet. Phasellus suspendisse sit sagittis, scelerisque senectus orci eget quis.",
+    "Price" : "$1.00",
+    "Img" : "test_img.png",
+    "Rating" : "five.png"
+},
+{
+  "Name" : "Food 2",
+  "Seller" : "Farm y",
+  "Description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare et odio et urna sed. Ante pellentesque justo, odio imperdiet. Phasellus suspendisse sit sagittis, scelerisque senectus orci eget quis.",
+  "Price" : "$2.00",
+  "Img" : "test_img.png",
+  "Rating" : "four.png"
+},
+{
+  "Name" : "Food 3",
+  "Seller" : "Farm z",
+  "Description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare et odio et urna sed. Ante pellentesque justo, odio imperdiet. Phasellus suspendisse sit sagittis, scelerisque senectus orci eget quis.",
+  "Price" : "$3.00",
+  "Img" : "test_img.png",
+  "Rating" : "three.png"
+}
+]

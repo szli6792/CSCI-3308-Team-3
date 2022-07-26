@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:700,500,600");
+
+:root 
+{ 
+  --black: #000000;
+  --blue-dianne: #253d4e;
+  --jungle-green: #3bb77e;
+  --silver-chalice: #adadad;
+  --white: #ffffff;
+  
+  --font-size-l: 32px;
+  --font-size-m: 24px;
+  --font-size-s: 21px;
+  --font-size-xl: 45px;
+  --font-size-xs: 16px;
+  --font-size-xxs: 14px;
+  --font-size-xxxs: 12px;
+ 
+  --font-family-quicksand: "Quicksand", Helvetica;
+}
+
+.results-page 
+{
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    height: 2488px;
+    overflow: hidden;
+    padding: 1px 0;
+    width: 1440px;
+  }
+
+.Title {
+    color: var(--black);
+    font-family: var(--font-family-quicksand);
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    letter-spacing: 0;
+    position: absolute;
+    top: 100px;
+    left: 75px;
+  }

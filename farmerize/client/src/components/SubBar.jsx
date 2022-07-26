@@ -1,18 +1,28 @@
 import React from 'react';
 import './SubBar.css';
-import styled from "styled-components";
-import { css } from "styled-components";
 
 const SubBar = () => {
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log(event.target.email.value)
+        alert('You have subscribed to our mailing list!')}
+
     return (
     <div className="subbar">
-    <input
-        className="email_input"
-        type="text"
-        id="search"
-        placeholder="Enter your email adress">
-    </input>
-    <button className="sub_button" type="submit"> Subscribe </button>
+    <form onSubmit={handleSubmit}>
+        <fieldset>
+            <label>
+                <input 
+                className='email_input'
+                placeholder='Enter your email adress'
+                name="email"
+                >
+                </input>
+            </label>
+        </fieldset>
+        <button className="sub_button" type="submit"> Subscribe </button>
+    </form>
     </div>
     );
 };

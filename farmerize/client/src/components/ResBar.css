@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700,500,600");
+
+.res{
+    margin-left: 0px;
+}
+
+.data_img {
+    height: 273px;
+    width: 273px;
+
+    margin-top: 150px;
+    margin-left: 80px;
+    position: relative;
+    float: left;
+}
+
+.data_price {
+    color: var(--jungle-green);
+    font-family: var(--font-family-quicksand);
+    font-size: var(--font-size-m);
+    font-weight: 600;
+    font-style: normal;
+
+    float: right;
+    margin-top: 150px;
+    margin-right: 100px;
+    position: relative;
+}
+
+.data_name{
+    color: var(--black);
+    font-family: var(--font-family-quicksand);
+    font-size: var(--font-size-xl);
+    font-weight: 300;
+    font-style: normal;
+
+    top: 10px;
+    left: 100px;
+    margin-top: 150px;
+    margin-bottom: 0px;
+    float: left;
+    position: relative;
+}
+
+.data_rating{
+    height: 50px;
+    width: 120px;
+
+    top: 20px;
+    left: 0px;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    float: left;
+    position: relative;
+}
+
+.data_seller{
+    color: var(--jungle-green);
+    font-family: var(--font-family-quicksand);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    font-style: normal;
+
+    top: 80px;
+    left: -100px;
+    margin-top: 200px;
+    margin-bottom: 0px;
+    float: left;
+    position: relative;
+}
+
+.data_description {
+    color: var(--black);
+    font-family: var(--font-family-quicksand);
+    font-size: var(--font-size-m);
+    font-weight: 600;
+    font-style: normal;
+
+    top: -85px;
+    left: 450px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 500px;
+    float: left;
+    position: relative;
+    white-space: wrap;
+    overflow: visible;
+
+}

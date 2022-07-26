@@ -25,7 +25,7 @@
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   padding: 14px;
-  width: 442px;
+  width: 222px;
   outline: none;
   z-index: 1000;
   border-color: black;
@@ -34,17 +34,20 @@
 .sub_button {
   display: flex;
   background: #D4D4D4;
-  height: 42px;
+  height: 44px;
   min-width: 85px;
   padding: 16.5px;
   border: none;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   z-index: 1000;
-  border-color: black;
   text-align: center;
-  text-decoration-color: white;
+  color: black;
   font-family: --font-family-quicksand;
+  font-size: medium;
+  position: absolute;
+  left: 240px;
+  bottom: -5px;
 }
 
 .sub_button:hover {
