@@ -141,22 +141,46 @@ For each field of the table, provide name and short description:
 
 List of tests for verifying each table:
 - Use case name
-
+    get reviews
 - Description
-
+    returns all reviews for a given product id
 - Pre-conditions
-
+    databse already has reviews for each product
 - Test steps
-
+    * navigate to the getreivew api in our express server
+    * receive query feedback
+    * test with test set
 - Expected result
-
+    * query matches pre compiled test expectations
 - Actual result
-
+    * returns correct reviews
 - Status (Pass/Fail)
-
+    * pass
 - Notes
-
+    N/A
 - Post-conditions
+    * reviews can be added to database or products can be deleted
+    
+- Use case name
+    post review
+- Description
+    posts review to the reviews table after input
+- Pre-conditions
+    use is on a specific proudct page
+- Test steps
+    * insert product rating
+    * insert product review
+    * send to database
+- Expected result
+    * review is inserted into database
+- Actual result
+    * correct review is inserted to database
+- Status (Pass/Fail)
+    * pass
+- Notes
+    N/A
+- Post-conditions
+    * reviews can be added to database or products can be deleted
 
 ## Query methods
 
@@ -167,23 +191,27 @@ Home Page:
  - return values: Product Table (Name, Category, Picture, Price, Review, Name), Farm Table (Name).
  - List of tests for verifying each access method:
   - Use case name
-  
+        Test of special product display
   - Description
-
+        This test will make sure that when we query the database for the special products that the proper items are displayed at the proper place.
   - Pre-conditions
-
+        The special products are already marked corretcly in the database and the user accessess the homepage
   - Test steps
-
+        * navigate to homepage
   - Expected result
-
+        * the user should see three seperate rows of 5 products
+            - Featured
+            - Most Popular
+            - Highest Rated
   - Actual result
-
+        * The page is rendered with 15 items in their respective category
   - Status (Pass/Fail)
-
+        * pass
   - Notes
-
+        N/A
   - Post-conditions
-
+        The data is refreshed when the databse is updated for special products
+        
 About Us Page:
  - Name: Subscribe feature
  - Description: Insert query involving users entering their email adresses into the subscriptions table.
@@ -263,20 +291,23 @@ Results Page:
  - return values: Product Table (Name, Category, Picture, Price, Review, Name), Farm Table (Name).
  - List of tests for verifying each access method:
   - Use case name
-  
+        Return search check
   - Description
-
+        Makes sure that the search feature displays the proper products
   - Pre-conditions
-
+        The database is pre loaded with products that a user can search including category price and other information =
   - Test steps
-
+        * Navigate to homepage
+        * Search for meat
+        * get ridirected to results page
+        * see all meat products on the screen
   - Expected result
-
+        * get all meats displayed including their information on the results page
   - Actual result
-
+        * all meats are displayed
   - Status (Pass/Fail)
-
+        * pass
   - Notes
-
+        N/A
   - Post-conditions
-
+        Product information can change overtime including but not limited to category change and even product deletion
