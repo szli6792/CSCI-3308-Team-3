@@ -100,7 +100,7 @@
   background: none;
   border: none;
   font-family: var(--font-family-quicksand);
-  font-size: var(--font-size-xl);
+  font-size: 15px;
   font-weight: 600;
   letter-spacing: 0;
   min-width: 75px;

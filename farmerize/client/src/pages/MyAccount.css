@@ -119,10 +119,11 @@
     outline: none;
 }
 
-p {
+.perror {
     width: 550px;
     float:left;
     position:absolute;
+    color: red;
 }
 
 .rect-2 {
@@ -159,7 +160,7 @@ p {
   z-index: 4;
 }
 
-button {
+.accountbutton {
     background-color:transparent;
     display: inline-block;     
     position: relative;    
@@ -169,7 +170,7 @@ button {
     border: none;
 }
 
-button:hover {
+.accountbutton:hover {
     background-color:#3bb77e;
 }
 

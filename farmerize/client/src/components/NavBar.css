@@ -19,8 +19,7 @@ a {
   align-items: center;
   border-bottom: 1px solid rgb(0, 0, 0, 0.5);
 }
-
-nav {
+.nav {
   display: flex;
   width: 100%;
   height: 62px;
@@ -29,31 +28,34 @@ nav {
   color: #3bb77e;
 }
 
-nav .logo {
+.logo {
   font-size: 20px;
   font-weight: 700;
   justify-content: left;
-  width: 100%;
   padding-left: 75px;
   cursor: default;
 }
 
-.link_container {
+.searchbar {
+  justify-self: center;
+}
+
+/* .link_container {
   display: flex;
   align-items: center;
   justify-content: right;
   color: black;
-  width: 100%;
+  width: 33%;
   padding-right: 75px;
   font: 'Quicksand';
-}
+} */
 
-nav .nav-links {
+/* nav .nav-links {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 40%;
-}
+} */
 
 .link_text {
   display: flex;

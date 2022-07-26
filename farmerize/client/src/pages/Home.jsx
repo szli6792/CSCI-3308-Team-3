@@ -2,6 +2,7 @@ import React from 'react';
 import send from '../assets/li-send.svg';
 import './Home.css';
 import Scroll from '../components/Scroll';
+import Card from '../components/Card';
 import { usePost } from '../utils/post';
 
 const Home = () => {
@@ -18,7 +19,7 @@ const Home = () => {
               Top quality produce, from our farms to your table.
             </h1>
           </div>
-          <div className="subscribe-formz">
+          {/* <div className="subscribe-formz">
             <div className="newsletter-form">
               <img className="lisend" src={send} alt="sendimg"></img>
               <input type="text" className="email-entry"></input>
@@ -26,15 +27,19 @@ const Home = () => {
                 <button className="subscribe">Subscribe</button>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="featured-deals">
         <h1 className="featured-deals-header">Featured Deals</h1>
       </div>
-      <div className="featured-deals-row">
+      {/* <div className="featured-deals-row">
         <Scroll />
+      </div> */}
+      <div>
+        <Card />
       </div>
+      
     </div>
   );
 };

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700,500,600');
+
+.cardcontainer {
+    display: flex;
+    border: 1px solid lightgray;
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.card-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.card-img {
+    justify-self: center;
+}
+
+.card-name-container {
+    margin: 10px;
+}
+
+.card-name {
+    color: #253D4E;
+    font-family: var(--font-family-quicksand);
+    font-weight: 600;
+    font-size: 18px;
+}

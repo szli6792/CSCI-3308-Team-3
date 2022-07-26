@@ -57,7 +57,7 @@ const MyAccount = () => {
 
         <div class="light-contained-defa">
             <div class="light-contained-default-default">
-                <p style={{color: "red"}}>{true ? "" : "Username error"}</p>
+                <p className="perror">{true ? "" : "Username error"}</p>
                 <input 
                     type='text'
                     id='firstName'
@@ -72,7 +72,7 @@ const MyAccount = () => {
                 </input>
             </div>
             <div class="light-contained-default-default-1">
-                <p style={{color: "red"}}>{true ? "" : "Username error"}</p>
+                <p className="perror">{true ? "" : "Username error"}</p>
                 <input
                     type='text'
                     id='lastName'
@@ -95,7 +95,7 @@ const MyAccount = () => {
         
         <div class="light-contained-defa-1">
             <div class="light-contained-default-default">
-                <p style={{color: "red"}}>{true ? "" : "Username error"}</p>
+                <p className="perror">{true ? "" : "Username error"}</p>
                 <input 
                     type='tel'
                     id='phone'
@@ -107,7 +107,7 @@ const MyAccount = () => {
                 </input>
             </div>
             <div class="light-contained-default-default-1">
-                <p style={{color: "red"}}>{true ? "" : "Username error"}</p>
+                <p className="perror">{true ? "" : "Username error"}</p>
                 <input
                     type='email'
                     id='email'
@@ -127,7 +127,7 @@ const MyAccount = () => {
 
         <div class="light-contained-defa-2">
             <div class="light-contained-default-default">
-                <p style={{color: "red"}}>{true ? "" : "Username error"}</p>
+                <p className="perror">{true ? "" : "Username error"}</p>
                 <input 
                     type='text'
                     id='address'
@@ -139,7 +139,7 @@ const MyAccount = () => {
                 </input>
             </div>
             <div class="light-contained-default-default-1">
-                <p style={{color: "red"}}>{true ? "" : "Username error"}</p>
+                <p className="perror">{true ? "" : "Username error"}</p>
                 <input
                     type='text'
                     id='age'
@@ -170,7 +170,7 @@ const MyAccount = () => {
         <div class="confirm-password quicksand-semi-bold-mirage-39px">Confirm Password</div>
 
         <label class="light-contained-default-default-3">
-            <p style={{color: "red"}}>{match ? "" : "Passwords do not match"}</p>
+            <p className="perror">{match ? "" : "Passwords do not match"}</p>
             <input
                 type='password'
                 id='password'
@@ -184,7 +184,7 @@ const MyAccount = () => {
         </label>
         
         <div class="create-button">
-            <button type= "submit"><div class="label valign-text-middle">Create Account</div></button>
+            <button className="accountbutton" type= "submit"><div class="label valign-text-middle">Create Account</div></button>
         </div>
 
         <div class="empty"></div>

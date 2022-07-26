@@ -14,22 +14,6 @@ const NavBar = () => {
         <div className="searchbar">
           <SearchBar />
         </div>
-        <div className="link_container">
-          <ul className="nav-links">
-            <li>
-              <img src={heart} alt="heart" width="24" height="24"></img>
-            </li>
-            <li className="link_text">
-              <a>Wishlist</a>
-            </li>
-            <li>
-              <img src={cart} alt="heart" width="32" height="32"></img>
-            </li>
-            <li className="link_text">
-              <a>Cart</a>
-            </li>
-          </ul>
-        </div>
       </nav>
     </div>
   );
