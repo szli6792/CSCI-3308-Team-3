@@ -20,8 +20,14 @@
 
 ### Ethan Brown Individual Tasks:
 
-- Work on integrating interactive fatures on About Us and Results pages with our database.
-- Continue improving UI of About Us and Results pages.
+- Work on integrating interactive fatures on Results page with our database.
+- Continue improving UI of Results page.
+
+![Screen Shot 2022-07-26 at 20 55 53](https://user-images.githubusercontent.com/97766930/181137493-b892d8fe-0277-4029-9445-0e1eff5f11cb.png)
+
+- Work on integrating interactive fatures on About Us page with our database.
+
+![Screen Shot 2022-07-26 at 20 55 29](https://user-images.githubusercontent.com/97766930/181137505-3c4615ef-ef74-4d58-bf07-153b12ac303b.png)
 
 ### Matt Fournier Individual Tasks:
 
