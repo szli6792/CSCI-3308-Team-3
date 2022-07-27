@@ -19,24 +19,18 @@ For each field of the table, provide name and short description:
 - Special: Category of deal properties (Featured deal, Most popular, Highest rated).
 
 List of tests for verifying each table:
-- Use case name
-
-- Description
-
-- Pre-conditions
-
-- Test steps
-
-- Expected result
-
-- Actual result
-
-- Status (Pass/Fail)
-
-- Notes
-
-- Post-conditions
-
+- Use case name: Test integrity of products table data displayed.
+- Description: Verify that the correct product table data is listed for a given product, page of products, category of products, search of product.
+- Pre-conditions: N/A
+- Test steps:
+    1. Navigate to a specified page with products displayed.
+    2. Record for each listed product:  Product ID, Farm ID, Category, Name, Img, Price, Description, About and Special.
+    3. Check that the recorded data from step 2 matches the data stored within each respective Product ID in the database.
+- Expected result: User displayed appropriate products table data as given by the data within the products table.
+- Actual result: User shown product and product summary data for a given page, category, search, etc.
+- Status (Pass/Fail): Pass
+- Notes: N/A
+- Post-conditions: The webpage currently visited by a user should be recorded in the database.
 
 ## Farms Table
 
@@ -50,23 +44,18 @@ For each field of the table, provide name and short description:
 - About: More detailed information about the farm including where it's located, who it's run by and the style of oepration.
 
 List of tests for verifying each table:
-- Use case name
-
-- Description
-
-- Pre-conditions
-
-- Test steps
-
-- Expected result
-
-- Actual result
-
-- Status (Pass/Fail)
-
-- Notes
-
-- Post-conditions
+- Use case name: Test integrity of farms table data displayed.
+- Description: Verify that the correct farms table data is listed for a given product, page of products, category of products, search of product.
+- Pre-conditions: N/A
+- Test steps:
+    1. Navigate to a specified page with products displayed.
+    2. Record for each listed product:  Farm ID, Name and About.
+    3. Check that the recorded data from step 2 matches the data stored within each respective Farm ID in the database.
+- Expected result: User displayed appropriate farms table data as given by the data within the farms table.
+- Actual result: User shown product and product summary data for a given page, category, search, etc.
+- Status (Pass/Fail): Pass
+- Notes: N/A
+- Post-conditions: The webpage currently visited by a user should be recorded in the database.
 
 ## Subscriptions Table
 
@@ -77,27 +66,22 @@ For each field of the table, provide name and short description:
 - Email: The given email of a user.
 
 List of tests for verifying each table:
-- Use case name
-
-- Description
-
-- Pre-conditions
-
-- Test steps
-
-- Expected result
-
-- Actual result
-
-- Status (Pass/Fail)
-
-- Notes
-
-- Post-conditions
+- Use case name: Test accurate recording of emails in subscriptions table.
+- Description: Verify that if a correctly formatted email that is not subscribed to the email list is inputted, it is added to the subscriptions table.
+- Pre-conditions: User enters text into the subscription bar.
+- Test steps:
+    1. Navigate to the about us page.
+    2. Enter a collection of emails that are either valid, in incorrect format or already exist within the subscriptions table into the subscription bar.
+    3. Check for each email inputted, whether the subscription table was appropriately updated/not updated.
+- Expected result: For inputted correctly formatted emails that dont already exist within the usbscriptions tabe, the subscriptions table should be updated with the inputted email. Alternatively, the subscriptions table should not be updated.
+- Actual result: User inputs email into subscriptions bar then recieves a notification that their email has been added to the subscriptions table.
+- Status (Pass/Fail): Pass
+- Notes: N/A
+- Post-conditions: The webpage currently visited by a user should be recorded in the database. The subcription database should be updated. Pop up notifications informing user that heir email has been added to the subscription list.
 
 ## Users Table 
 
-Table Description: Table that stores all the most important user information.
+Table Description: Table that stores all the required user information in order to make an account.
 
 For each field of the table, provide name and short description.
 - UserID: ID of the user.
@@ -110,23 +94,18 @@ For each field of the table, provide name and short description.
 - Password: Valid password of the given users account.
 
 List of tests for verifying each table:
-- Use case name
-
-- Description
-
-- Pre-conditions
-
-- Test steps
-
-- Expected result
-
-- Actual result
-
-- Status (Pass/Fail)
-
-- Notes
-
-- Post-conditions
+- Use case name: Test accurate recording of user information in users table.
+- Description: Verify that if a correctly formatted set of user data is inputted, it is added tot he users table.
+- Pre-conditions: Users enter text into all the user info fields.
+- Test steps:
+    1. Navigate to the my account page.
+    2. Enter into all user info fields, a collection of data that is either valid, incorrectly formatted or already exists within the users table.
+    3. Check the for each collection of inputted user data, whether the users table was appropriately updated/not updated.
+- Expected result: For inputted correctly formatted user infothat dont already exist within the users table, the users table should be uppdated witht he inputted user data. Alternatively, the user table should not be updated.
+- Actual result: User inputs their info into the respective fields then recieves a notification that their account has been create.
+- Status (Pass/Fail): Pass
+- Notes: N/A
+- Post-conditions: The webpage currently visited by a user should be recorded in the database. Ther user table should be updated. Pop up notifications informing user that their account has been created.
 
 ## Reviews Table 
 
