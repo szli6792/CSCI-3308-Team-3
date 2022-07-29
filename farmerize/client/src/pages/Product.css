@@ -23,7 +23,6 @@
   font-weight: 500;
   font-size: 30px;
   margin-top: 5px;
-  position:static;
 }
 
 .product-page {
@@ -55,6 +54,8 @@
 .fourth-div {
   margin-top: 60px;
   display:block;
+  justify-items: center;
+  min-width: 800px;
 }
 
 .top-left-product-image {
@@ -191,9 +192,29 @@
   padding: 12.8px 35px;
 }
 
+.overlap-group2 {
+  align-items: flex-start;
+  background-color: var(--gallery);
+  display: inline-block;
+  height: 70px;
+  margin-top: 0;
+  min-width: 709px;
+  padding: 12.8px 35px;
+}
+
 .rating-1 {
   background-color: var(--gallery);
     height: 50px;
+    margin-bottom: 0;
+    width: 1569px;
+    border: none;
+    outline: none;
+    font-size:30pt;
+}
+
+.rating-2 {
+  background: rgba (0, 0, 0, 0.5);
+    height: 400px;
     margin-bottom: 0;
     width: 1569px;
     border: none;
@@ -236,6 +257,7 @@ div.stars {
   display:fixed;
   margin-right:980px;
   overflow:hidden;
+  min-width:800px;
 }
  
 input.star { display: none; }
