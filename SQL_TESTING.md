@@ -1,4 +1,4 @@
-# Project Milestone 5: Web Pages Design
+# Project Milestone 5: SQL Design
 
 
 ## Products Table
