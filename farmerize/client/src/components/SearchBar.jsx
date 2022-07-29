@@ -5,12 +5,12 @@ import search_img from '../assets/search.svg';
 
 const SearchBar = () => {
 
-  const [search, setSearch] = useState("");
+  const [searchterm, setSearch] = useState("");
 
   let navigate = useNavigate();
   const handleSubmit = (e) => {
-    if (search.length > 0) {
-      navigate('/aboutus', {state:{search: search}});
+    if (searchterm.length > 0) {
+      navigate('/results', {state:{searchterm: searchterm}});
       setSearch("")
     }
   }
@@ -21,7 +21,7 @@ const SearchBar = () => {
         type='text'
         id='search'
         name='search'
-        value={search}
+        value={searchterm}
         minlength="1"
         onChange={(e) => setSearch(e.target.value)}
         class="search_input">

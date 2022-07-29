@@ -44,10 +44,10 @@
 
 .data_rating{
     height: 50px;
-    width: 120px;
+    width: 160px;
 
     top: 20px;
-    left: 0px;
+    left: -30px;
     margin-top: 200px;
     margin-bottom: 20px;
     float: left;
@@ -80,7 +80,7 @@
     left: 450px;
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-right: 500px;
+    margin-right: 700px;
     float: left;
     position: relative;
     white-space: wrap;

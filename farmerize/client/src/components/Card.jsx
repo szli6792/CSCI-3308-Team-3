@@ -1,6 +1,5 @@
 import React from 'react';
 import './Card.css';
-import apple from '../assets/apple.png'
 
 const Card = () => {
 
@@ -10,7 +9,7 @@ const Card = () => {
   return (
   <div className='cardcontainer'>
     <div className='card-img-container'>
-      <img className="card-img" src={apple} alt="apple" width="150px" height="150px"/>
+      <img className="card-img" src={'/images/apple.png'} alt="apple" width="150px" height="150px"/>
     </div>
     <div>
       <p>

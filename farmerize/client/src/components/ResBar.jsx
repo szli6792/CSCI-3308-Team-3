@@ -5,19 +5,18 @@ import { Component } from 'react';
 
 
 class ResBar extends Component {
-    constructor(props) {
-        super(props);
-    }
+
     render() {
         return (
             <div className="res">
-            <ul>
-            {test.map((data, i) => <li key={i}>
-                <img className="data_img" src={`${data.Img}`} alt=""></img>
-                <div className="data_price">{data.Price}</div>
+            <ul className='resbar-list'>
+            {this.props.data.map((data, i) => <li key={i}>
+                <img className="data_img" src={`/images/${data.Img}`} alt=""></img>
+                <div className="data_price">${data.Price}</div>
                 <h1 className="data_name">{data.Name}</h1>
-                <img className="data_rating" src={`${data.Rating}`} alt=""></img> 
-                <div className="data_seller">{data.Seller}</div>  
+                <img className="data_rating" src={`/images/four.png`} alt=""></img> 
+                {/* <img className="data_rating" src={`${data.Rating}`} alt=""></img>  */}
+                <div className="data_seller">{data.FarmID}</div>  
                 <div className="data_description">{data.Description}</div>
             </li>)}
             </ul>

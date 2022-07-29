@@ -41,12 +41,14 @@ app.get('/api/sql/getitem', (req,res,next) => {
 
 app.get('/api/sql/search', (req,res,next) => {
 	sql.connect(config, err => {
+		console.log('in search')
 		if (err) {
 			console.log('Failed to establish Database connection.', err.stack);
 			next(err);
 		}
-		const search = req.query.search;
-		const query = `SELECT * from farmerize.dbo.products where Name like '%`+search`%' or Category like '%`+search+`%'`;
+		const searchterm = req.query.searchterm;
+		const query = `SELECT * from farmerize.dbo.products where Name like '%`+searchterm+`%' or Category like '%`+searchterm+`%'`;
+		console.log(query)
 		const request = new sql.Request();
 		request.query(query, (err, result) => {
 			if (err) {
