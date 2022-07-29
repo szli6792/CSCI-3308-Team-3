@@ -35,7 +35,10 @@
 
 ### Szymon Ligas Individual Tasks:
 
-- 
+- finalize sql integration for product page
+- help Ethan if needed
+- design simple unit tests/ provide documentation
+- prepare final demo for presentation
 
 ### Current Development Stack:
 
@@ -88,7 +91,9 @@
 
 ### Szymon Ligas Individual Tasks:
 
-- 
+- finish integrating SQL for My Account page
+- finish product page
+- complete sql and test writeup
 
 ### Current Development Stack:
 
@@ -140,7 +145,9 @@
 
 ### Szymon Ligas Individual Tasks:
 
-- 
+- continue/finish my account page
+- complete footer
+- identify sql needs
 
 ### Current Development Stack:
 
