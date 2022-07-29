@@ -88,7 +88,7 @@ const Product = () => {
                 <div class="leave-a-review quicksand-semi-bold-black-44-2px">Leave a Review</div>
           </div>
           <div class="text-grouping2">
-            <div class="form-input">
+            <div class="form-input" >
             <form onSubmit={handleSubmit}>
               <div class="light-contained-default-default">
                 <label
@@ -119,15 +119,15 @@ const Product = () => {
                 </div>
               <div class="light-contained-default-default">
                 <label 
-                class="overlap-group1" ><p class="quicksand-medium-silver-chalice-30px">{!review ? "Product Review" : ""}</p>
-                  <input 
-                  class="rating-1"
+                class="overlap-group2" ><p class="quicksand-medium-silver-chalice-30px">{!review ? "Product Review" : ""}</p>
+                  <textarea 
+                  class="rating-2"
                   type='text'
                   name='review'
                   value={review}
                   required
                   title="Enter your product review"
-                  onChange={(e) => setReview(e.target.value)}></input></label>
+                  onChange={(e) => setReview(e.target.value)}></textarea></label>
               </div>
               <div class="create-button">
             <button type= "submit"><div class="label valign-text-middle">Submit</div></button>
@@ -142,4 +142,3 @@ const Product = () => {
 };
 
 export default Product;
-
