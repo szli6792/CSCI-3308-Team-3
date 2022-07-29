@@ -198,22 +198,26 @@ About Us Page:
  - return values: None.
  - List of tests for verifying each access method:
   - Use case name
-  
+            Test subsciber sign up (addition to mailing list)  
   - Description
-
+            Verify that user is able to be added to a mailing list after inputting valid minimum required details.
   - Pre-conditions
-
+            N/A
   - Test steps
-
+            Navigate to my about us page
+            Under the open fields, input email and press the button.
+            For all test cases, if user test case are valid (not currently used, correct format for all fields) then check that the user recieves the correct prompt.
+            Else, check that an error message is displayed and the user database is not updated with the account.
   - Expected result
-
+            User is shown successful prompt and user details are entered into the database.
   - Actual result
-
+            User is shown successful prompt and user details are entered into the database.  
   - Status (Pass/Fail)
-
+            Pass
   - Notes
-
+            Needs improvements like basic security and a proof-read of regex email input checks.
   - Post-conditions
+            None.
 
 My Account Page:
  - Name: Sign up feature
@@ -222,23 +226,27 @@ My Account Page:
  - return values: Status 200.
  - List of tests for verifying each access method:
   - Use case name
-  
+            Test user sign up (account creation)
   - Description
-
+            Verify that user is able to create an account after inputting valid minimum required details.
   - Pre-conditions
-
+            N/A
   - Test steps
-
+            Navigate to my account page
+            Under all the open fields, input a list of valid and not valid user tests (First name, Last name, Phone, Email (defualt username), Age, Adress, Password, confirm password) and then use the "create account" button.
+            For all test cases, if user test case are valid (not currently used, correct format for all fields) then check that the user recieves the correct prompt.
+            Else, check that an error message is displayed and the user database is not updated with the account.
   - Expected result
-
+            User is shown successful prompt and user details are entered into the database.
   - Actual result
-
+            User is shown successful prompt and user details are entered into the database.            
   - Status (Pass/Fail)
-
+            Pass
   - Notes
-
+            Needs improvements like basic security and a proof-read of form input checks.
   - Post-conditions
-
+            We may require less or additional information from the new user.
+            
 Product Page:
  - Name: Displaying detailed product informaiton
  - Description: Rendering detailed summary information of a specific product/seller. Insert query involving users entering a number rating and string review.
@@ -246,23 +254,34 @@ Product Page:
  - return values: Status 200.
  - List of tests for verifying each access method:
   - Use case name
-  
+            Test pictures displayed.
+            Test integrity of products displayed.
+            Test review display.
+            Test review input.
   - Description
-
+            Navigate to a specified page with products displayed.
+            Record for each listed product: Name, Rating, Farm that produced, Price, Picture.
+            Check that the recorded data from step 2 matches the data stored within these pages, categories, searches, etc of the database.
   - Pre-conditions
-
+            The database is pre loaded with product info that a user can search, like price, seller, and description
   - Test steps
-
+            Test pictures displayed.
+            Test integrity of products displayed.
+            Test review display.
+            Test review input.
   - Expected result
-
+            User displayed appropriate products and summary product info as given by the data within the product database.
+            User shown product and product summary data for a given page, category, search, etc.
   - Actual result
-
+            Not yet integrated.
   - Status (Pass/Fail)
-
+            Not known yet.
   - Notes
-
+            None at this time.
   - Post-conditions
-
+            The webpage currently visited by a user should be recorded in the database.
+            Product information can change overtime including but not limited to category change and even product deletion.
+            
 Results Page:
  - Name: Display matching products
  - Description: Render basic summary information on all the items in our product table that match the user entered string within the search bar.
