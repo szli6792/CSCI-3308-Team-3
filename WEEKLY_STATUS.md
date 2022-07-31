@@ -20,9 +20,9 @@
 
 ### Ethan Brown Individual Tasks:
 
-- Work on presentation for PM 7.
+- Work on powerpoint presentation for PM 7.
 - Work on integrating interactive fatures on Results page and about us page with our database.
-- Continue improving UI of Results page.
+- Continue improving UI of about us and Results page.
 
 ### Matt Fournier Individual Tasks:
 
@@ -46,7 +46,7 @@
 
 ### Weekly Team Meeting Recording:
 
-- 
+- https://drive.google.com/drive/folders/10pij6v-buontR6GeTQ2azRCpwTi0Hen1?usp=sharing
 
 ### UI Design
 
