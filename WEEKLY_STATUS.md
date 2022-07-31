@@ -1,6 +1,61 @@
 # CSCI-3308-Team-3
 
 
+## WEEKLY_STATUS.md (6th status report: July 31 - Aug 6)
+
+
+## Weekly Schedule
+
+![Screen Shot 2022-07-31 at 10 23 29](https://user-images.githubusercontent.com/97766930/182030869-0a3a8379-6a1e-45f3-aee0-babbe7116f03.png)
+
+
+### Upcoming Project Milestone:
+
+- Project milestone 7 presentation (Aug 4 2022)
+
+### Group Tasks:
+
+- Create and plan powerpoint presentation as well as record demo of website (backup) for PM 7 presentation.
+- Continue building the first 5 web-pages and keep the main branch of our Git repository updated with each others work.
+
+### Ethan Brown Individual Tasks:
+
+- Work on presentation for PM 7.
+- Work on integrating interactive fatures on Results page and about us page with our database.
+- Continue improving UI of Results page.
+
+### Matt Fournier Individual Tasks:
+
+- 
+
+### Szymon Ligas Individual Tasks:
+
+- finalize sql integration for product page
+- help Ethan if needed
+- design simple unit tests/ provide documentation
+- prepare final demo for presentation
+
+### Current Development Stack:
+
+- React
+- Node.js
+- Express.js
+- MongoDB
+- AWS
+- Figma
+
+### Weekly Team Meeting Recording:
+
+- 
+
+### UI Design
+
+- https://www.figma.com/file/89jOTItK5FA3VZr2vBV6Pe/Farm-Marketplace-UI?node-id=0%3A1
+
+- Currently designed pages: (homepage, reuslts page, categories page, product page, about us page, my account page)
+- To be designed pages:
+
+
 ## WEEKLY_STATUS.md (5th status report: July 24 - July 30)
 
 
