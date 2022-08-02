@@ -12,6 +12,11 @@ a {
   text-decoration: none;
 }
 
+.home-link {
+  color:#3bb77e;
+  text-decoration: none;
+}
+
 .container {
   display: flex;
   width: 100%;
@@ -34,6 +39,7 @@ a {
   justify-content: left;
   padding-left: 75px;
   cursor: default;
+  text-decoration: none;
 }
 
 .searchbar {

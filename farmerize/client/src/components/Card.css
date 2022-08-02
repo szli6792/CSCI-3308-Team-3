@@ -7,6 +7,8 @@
     height: 300px;
     border-radius: 10px;
     flex-direction: column;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 .card-img-container {
@@ -29,4 +31,62 @@
     font-family: var(--font-family-quicksand);
     font-weight: 600;
     font-size: 18px;
+}
+
+.card-ratings {
+    width: 80px;
+    height: 25px;
+    margin-left: 5px;
+}
+
+.card-category-container {
+    margin-left: 10px;
+}
+
+.card-category {
+    font-family: var(--font-family-quicksand);
+    font-weight: 12;
+    font-size: 12px;
+    color: #ADADAD;
+}
+
+.card-farm-container {
+    margin-left: 10px;
+}
+
+.card-price {
+    color: #3BB77E;
+    font-family: var(--font-family-quicksand);
+    font-weight: 600;
+}
+
+.card-price-container {
+    margin-top: 5px;
+}
+
+.card-base {
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.view-product {
+    background-color: #3BB77E;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 3px;
+    color: white;
+    float: right;
+    margin-right: 10px;
+}
+
+.card-link-container {
+    width: 50%;
+    float: right;
+}
+
+.card-price-container {
+    width: 50%;
 }

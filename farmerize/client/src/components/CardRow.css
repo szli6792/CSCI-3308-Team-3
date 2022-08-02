@@ -1,0 +1,15 @@
+.card-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.card-row-title {
+  margin-bottom: 50px;
+  font-family: var(--font-family-quicksand);
+  font-size: 32px;
+  letter-spacing: 0px;
+  margin-left: 50px;
+  margin-top: 50px;
+}

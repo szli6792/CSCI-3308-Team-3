@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import './Footer.css';
 import search from '../assets/search.svg';
 import mail from '../assets/li-mail.svg';
@@ -50,13 +51,12 @@ const Footer = () => {
             <div class="frame-83">
                 <div class="directory">Directory</div>
                 <div class="frame-82">
-                <div class="about-us quicksand-medium-blue-dianne-16px">About Us</div>
-                <div class="categories quicksand-medium-blue-dianne-16px">Categories</div>
-                <div class="my-cart quicksand-medium-blue-dianne-16px">My Cart</div>
-                <div class="my-wish-list quicksand-medium-blue-dianne-16px">
-                    My Wish List
-                </div>
-                <div class="my-account quicksand-medium-blue-dianne-16px">My Account</div>
+                <Link class="my-account quicksand-medium-blue-dianne-16px" to='/myaccount'>
+                    About Us
+                </Link>
+                <Link class="my-account quicksand-medium-blue-dianne-16px" to='/myaccount'>
+                    My Account
+                </Link>
                 </div>
             </div>
         </div>

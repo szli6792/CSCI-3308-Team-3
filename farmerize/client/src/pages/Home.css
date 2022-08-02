@@ -110,19 +110,11 @@
   cursor: pointer;
 }
 
-.featured-deals {
-  margin-top: 75px;
-  min-height: 40px;
-  padding: 14.6px 49.7px;
-}
-
-.featured-deals-header {
-  font-family: var(--font-family-quicksand);
-  font-size: 32px;
-  letter-spacing: 0px;
-}
-
 .featured-deals-row {
   display: flex;
   flex-direction: row;
+}
+
+.all-cards {
+  margin-bottom: 40px;
 }
