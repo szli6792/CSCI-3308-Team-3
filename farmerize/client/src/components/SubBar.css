@@ -36,7 +36,7 @@
   background: #D4D4D4;
   height: 44px;
   min-width: 85px;
-  padding: 16.5px;
+  padding: 14px;
   border: none;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
@@ -47,7 +47,7 @@
   font-size: medium;
   position: absolute;
   left: 240px;
-  bottom: -5px;
+  bottom: -4px;
 }
 
 .sub_button:hover {
