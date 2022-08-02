@@ -15,7 +15,7 @@ const SubBar = () => {
             <label>
                 <input 
                 className='email_input'
-                placeholder='Enter your email adress'
+                placeholder='Enter your email address'
                 name="email"
                 >
                 </input>
