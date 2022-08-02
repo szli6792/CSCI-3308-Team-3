@@ -23,6 +23,10 @@ const Product = () => {
   // should be removed/obfuscated before release, good for testing
     console.log(rating)
     console.log(review)
+
+    //create review
+    const resp = fetch('/api/sql/createreview?ProductId=' + '' + '&review=' + review + '&rating=' + rating, {  method: 'Post' });
+    console.log(resp)
   }
 
   return (
@@ -130,7 +134,7 @@ const Product = () => {
                   onChange={(e) => setReview(e.target.value)}></textarea></label>
               </div>
               <div class="create-button">
-            <button type= "submit"><div class="label valign-text-middle">Submit</div></button>
+            <button type= "submit" class="accountbutton"><div class="label valign-text-middle">Submit</div></button>
         </div>
         </form>
             </div>
