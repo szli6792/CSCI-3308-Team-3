@@ -312,3 +312,17 @@ label.star:before {
     flex-direction: column;
     justify-content: center;
 }
+
+.accountbutton {
+  background-color:transparent;
+  display: inline-block;     
+  position: relative;    
+  z-index: 1;     
+  padding: 2em;     
+  margin: -3em;
+  border: none;
+}
+
+.accountbutton:hover {
+  background-color:#3bb77e;
+}
