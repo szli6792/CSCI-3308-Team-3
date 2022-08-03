@@ -54,6 +54,7 @@
     position: relative;
 }
 
+
 .data_seller{
     color: var(--jungle-green);
     font-family: var(--font-family-quicksand);
@@ -62,7 +63,7 @@
     font-style: normal;
 
     top: 80px;
-    left: -100px;
+    left: -175px;
     margin-top: 200px;
     margin-bottom: 0px;
     float: left;

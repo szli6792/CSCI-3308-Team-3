@@ -26,7 +26,7 @@ class Card extends Component {
           </div>
           <div className='card-farm-container'>
             <p className='card-farm'>
-              {this.props.data.FarmID}
+              {this.props.data.FarmName}
           </p>
           </div>
           <div className='card-base '>

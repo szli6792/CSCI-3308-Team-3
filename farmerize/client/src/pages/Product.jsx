@@ -56,7 +56,7 @@ const Product = () => {
                           </div>
                           <div class="text-1">(26)</div>
               </div>
-                          <div class="seller"><span class="span0">By </span><span class="span1">{data.FarmID}</span></div>
+                          <div class="seller"><span class="span0">By </span><span class="span1">{data.FarmName}</span></div>
           </div>
           <div class="product-description quicksand-semi-bold-black-33-2px">
             {data.Description}    
@@ -76,7 +76,7 @@ const Product = () => {
           <div class="image-seperator">
               <div class="about-the-farmer quicksand-semi-bold-black-44-2px">About the Farmer</div>
               <div class="text-grouping2 quicksand-semi-bold-black-33-2px">
-                {data.About}
+                {data.FarmAbout}
               </div>
           </div>
           <div class="image-container"><img class="icon-star" src={placeholderImage2} /></div>

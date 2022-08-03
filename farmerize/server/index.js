@@ -25,7 +25,10 @@ app.get('/api/sql/getitem', (req,res,next) => {
 			next(err);
 		}
 		const id = req.query.id;
-		const query = `SELECT * FROM farmerize.dbo.products WHERE ProductID=`+id+``;
+		const query = `SELECT products.*, farms.About as FarmAbout, farms.Name as FarmName FROM farmerize.dbo.products
+			LEFT JOIN farmerize.dbo.farms
+			ON products.FarmID = farms.FarmID
+			WHERE ProductID=`+id+``;
 		const request = new sql.Request();
 		request.query(query, (err, result) => {
 			if (err) {
@@ -47,7 +50,10 @@ app.get('/api/sql/search', (req,res,next) => {
 			next(err);
 		}
 		const searchterm = req.query.searchterm;
-		const query = `SELECT * from farmerize.dbo.products where Name like '%`+searchterm+`%' or Category like '%`+searchterm+`%'`;
+		const query = `SELECT products.*, farms.Name as FarmName from farmerize.dbo.products
+			LEFT JOIN farmerize.dbo.farms
+			ON products.FarmID = farmerize.dbo.farms.FarmID
+			where products.Name like '%`+searchterm+`%' or Category like '%`+searchterm+`%'`;
 		console.log(query)
 		const request = new sql.Request();
 		request.query(query, (err, result) => {
@@ -68,7 +74,10 @@ app.get('/api/sql/getfeatured', (req,res,next) => {
 			console.log('Failed to establish Database connection.', err.stack);
 			next(err);
 		}
-		const query = `SELECT * from farmerize.dbo.products WHERE Special = 0`;
+		const query = `SELECT products.*, farms.Name as FarmName from farmerize.dbo.products AS products
+			LEFT JOIN farmerize.dbo.farms
+			ON products.FarmID = farmerize.dbo.farms.FarmID
+			WHERE Special = 0`;
 		const request = new sql.Request();
 		request.query(query, (err, result) => {
 			if (err) {
@@ -88,7 +97,10 @@ app.get('/api/sql/getpopular', (req,res,next) => {
 			console.log('Failed to establish Database connection.', err.stack);
 			next(err);
 		}
-		const query = `SELECT * from farmerize.dbo.products WHERE Special = 1`;
+		const query = `SELECT products.*, farms.Name as FarmName from farmerize.dbo.products AS products
+			LEFT JOIN farmerize.dbo.farms
+			ON products.FarmID = farmerize.dbo.farms.FarmID
+			WHERE Special = 1`;
 		const request = new sql.Request();
 		request.query(query, (err, result) => {
 			if (err) {
@@ -108,7 +120,10 @@ app.get('/api/sql/gethighest', (req,res,next) => {
 			console.log('Failed to establish Database connection.', err.stack);
 			next(err);
 		}
-		const query = `SELECT * from farmerize.dbo.products WHERE Special = 2`;
+		const query = `SELECT products.*, farms.Name as FarmName from farmerize.dbo.products AS products
+			LEFT JOIN farmerize.dbo.farms
+			ON products.FarmID = farmerize.dbo.farms.FarmID
+			WHERE Special = 2`;
 		const request = new sql.Request();
 		request.query(query, (err, result) => {
 			if (err) {

@@ -1,12 +1,17 @@
-import React from 'react';
+import { React, useState }  from 'react';
+import { useFetch } from '../utils/hook';
 import './SubBar.css';
 
 const SubBar = () => {
 
+    const [email, setEmail] = useState("");
+
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(event.target.email.value)
-        alert('You have subscribed to our mailing list!')}
+        fetch('/api/sql/subscribe?email='+email, { method: 'POST' });
+        alert('You have subscribed to our mailing list!');
+        setEmail("");
+    };
 
     return (
     <div className="subbar">
@@ -17,6 +22,8 @@ const SubBar = () => {
                 className='email_input'
                 placeholder='Enter your email address'
                 name="email"
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
                 >
                 </input>
             </label>
