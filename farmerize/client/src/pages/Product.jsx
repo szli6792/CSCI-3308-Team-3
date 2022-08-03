@@ -1,5 +1,6 @@
-import React from 'react';
-import { useState }  from 'react';
+import { React, useState } from 'react';
+import { useLocation } from 'react-router-dom'
+import { useFetch } from '../utils/hook';
 import './Product.css';
 import star from '../assets/star.svg';
 import placeholderImage1 from '../assets/placeholderImage1.svg';
@@ -7,9 +8,12 @@ import placeholderImage2 from '../assets/placeholderImage2.svg';
 
 const Product = () => {
 
-  // Database request for product ID
-  const product_id = fetch('/api/sql/getitem?id=' + "", {  method: 'Post' });
+  const location = useLocation();
+  const productID = location.state.productID
+  console.log(productID)
 
+  // Database request for product ID
+  const [data] = useFetch('/api/sql/getitem?id=' + productID);
   //init form input
   const [rating, setRating] = useState("");
   const [review, setReview] = useState("");
@@ -17,26 +21,24 @@ const Product = () => {
   //handle submit review
   const handleSubmit = (e) => {
     e.preventDefault();
-    
     alert('Your review has been entered');
 
   // should be removed/obfuscated before release, good for testing
-    console.log(rating)
-    console.log(review)
 
     //create review
-    const resp = fetch('/api/sql/createreview?ProductId=' + '' + '&review=' + review + '&rating=' + rating, {  method: 'Post' });
-    console.log(resp)
+    console.log(productID)
+    const resp = fetch('/api/sql/createreview?productID=' + productID + '&review=' + review + '&rating=' + rating, {  method: 'Post' });
+    console.log('/api/sql/createreview?productID=' + productID + '&review=' + review + '&rating=' + rating)
   }
 
   return (
     <div class="product-page">
       <div class="first-div">
-        <div class="top-left-product-image"><img class="icon-star" src={placeholderImage1} /></div>
+        <div class="top-left-product-image"><img class="icon-star" src={`/images/${data.Img}`}/></div>
         <div class="right-of-image">
           <div class="titles">
-            <div class="product-name quicksand-semi-bold-black-44-2px">Ribeye Steak</div>
-            <div class="price">$18.99</div>
+            <div class="product-name quicksand-semi-bold-black-44-2px">{data.Name}</div>
+            <div class="price">${data.Price}</div>
           </div>
           <div class="review-bar">
               <div class="star-bar">
@@ -54,12 +56,10 @@ const Product = () => {
                           </div>
                           <div class="text-1">(26)</div>
               </div>
-                          <div class="seller"><span class="span0">By </span><span class="span1">Oakland Farms</span></div>
+                          <div class="seller"><span class="span0">By </span><span class="span1">{data.FarmID}</span></div>
           </div>
           <div class="product-description quicksand-semi-bold-black-33-2px">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare et odio et urna sed.
-                          <br /><br />Ante pellentesque justo, odio imperdiet. Phasellus suspendisse sit sagittis, scelerisque
-                          senectus orci eget quis. Fringilla quis nunc sit vel enim amet egestas.
+            {data.Description}    
           </div>
         </div>
       </div>
@@ -67,10 +67,7 @@ const Product = () => {
         <div class="image-seperator">
               <div class="about-the-product quicksand-semi-bold-black-44-2px">About the Product</div>
               <div class="text-grouping2 quicksand-semi-bold-black-33-2px">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare et odio et urna sed.
-                <br /><br />Ante pellentesque justo, odio imperdiet. Phasellus suspendisse sit sagittis, scelerisque
-                senectus orci eget quis. Fringilla quis nunc sit vel enim amet egestas.Ante pellentesque justo, odio
-                imperdiet. Phasellus suspendisse sit.
+                {data.About}
               </div>
         </div>
         <div class="image-container"><img class="icon-star" src={placeholderImage2} /></div>
@@ -79,10 +76,7 @@ const Product = () => {
           <div class="image-seperator">
               <div class="about-the-farmer quicksand-semi-bold-black-44-2px">About the Farmer</div>
               <div class="text-grouping2 quicksand-semi-bold-black-33-2px">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare et odio et urna sed.
-                <br /><br />Ante pellentesque justo, odio imperdiet. Phasellus suspendisse sit sagittis, scelerisque
-                senectus orci eget quis. Fringilla quis nunc sit vel enim amet egestas.Ante pellentesque justo, odio
-                imperdiet. Phasellus suspendisse sit.
+                {data.About}
               </div>
           </div>
           <div class="image-container"><img class="icon-star" src={placeholderImage2} /></div>

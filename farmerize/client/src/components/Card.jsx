@@ -36,7 +36,7 @@ class Card extends Component {
             </p>
             </div>
             <div className='card-link-container'>
-              <Link to='/product' state={{productid: this.props.data.ProductID}}>
+              <Link to='/product' state={{productID: this.props.data.ProductID}}>
                 <button className='view-product'>View Product</button>
               </Link>
             </div>

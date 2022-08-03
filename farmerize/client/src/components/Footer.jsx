@@ -51,7 +51,7 @@ const Footer = () => {
             <div class="frame-83">
                 <div class="directory">Directory</div>
                 <div class="frame-82">
-                <Link class="my-account quicksand-medium-blue-dianne-16px" to='/myaccount'>
+                <Link class="my-account quicksand-medium-blue-dianne-16px" to='/aboutus'>
                     About Us
                 </Link>
                 <Link class="my-account quicksand-medium-blue-dianne-16px" to='/myaccount'>

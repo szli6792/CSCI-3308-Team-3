@@ -33,7 +33,7 @@ app.get('/api/sql/getitem', (req,res,next) => {
 				next(err);
 			}
 			else {
-				res.json(result.recordsets[0]);
+				res.json(result.recordsets[0][0]);
 			}
 		});
 	});
@@ -190,7 +190,7 @@ app.post('/api/sql/createreview', (req, res, next) => {
 			}
 			else {
 				res.json(200);
-				console.log('inserted user')
+				console.log('inserted review')
 			}
 		});
 	});
