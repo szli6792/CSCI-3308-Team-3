@@ -118,3 +118,15 @@
 .all-cards {
   margin-bottom: 40px;
 }
+
+.homepage-pic {
+  border-radius: 10px;
+  justify-self: right;
+}
+
+.homepage-pic-container {
+  display: flex;
+  justify-content: right;
+  margin-top: 20px;
+  width: 100%;
+}

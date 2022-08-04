@@ -60,6 +60,12 @@
     font-weight: 600;
 }
 
+.card-farm {
+    color: #3BB77E;
+    font-family: var(--font-family-quicksand);
+    font-weight: 600;
+}
+
 .card-price-container {
     margin-top: 5px;
 }

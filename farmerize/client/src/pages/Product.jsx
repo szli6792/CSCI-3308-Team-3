@@ -70,7 +70,7 @@ const Product = () => {
                 {data.About}
               </div>
         </div>
-        <div class="image-container"><img class="icon-star" src={placeholderImage2} /></div>
+        <img className="product-image" src={`/images/Farm${data.FarmID}_1.png`} />
       </div>
       <div class="third-div">
           <div class="image-seperator">
@@ -79,7 +79,7 @@ const Product = () => {
                 {data.FarmAbout}
               </div>
           </div>
-          <div class="image-container"><img class="icon-star" src={placeholderImage2} /></div>
+          <img className="product-image" src={`/images/Farm${data.FarmID}_2.png`} />
       </div>
       <div class="fourth-div">    
          <div class="overlap-group3">

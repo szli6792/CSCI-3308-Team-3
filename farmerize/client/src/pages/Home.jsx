@@ -20,6 +20,9 @@ const Home = () => {
             </h1>
           </div>
         </div>
+        <div className='homepage-pic-container'>
+          <img className="homepage-pic" src='/images/farm.jpg' width="600px" height="400px"></img>
+          </div>
       </div>
       <div className='all-cards'>
         <CardRow />
