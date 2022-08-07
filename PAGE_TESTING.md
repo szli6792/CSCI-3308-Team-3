@@ -107,7 +107,7 @@ Link destinations for the page:
 
 List of tests for verifying the rendering of the page:
 
-- (test_#pagename_links) Test linked pages, (test_#pagename_data) Test integrity of products displayed
+- (test_#pagename_links) Test linked pages, (test_search) Test integrity of products displayed
 
 - (**Tests described in detail at bottom**)
 
