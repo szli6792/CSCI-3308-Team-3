@@ -72,7 +72,7 @@ Up to date source code present within GIT repo at location: CSCI-3308-Team-3/Far
 
 ## Test cases
 
-Up to date test cases code present within GIT repo at location: CSCI-3308-Team-3/farmerize/client/tests/
+Up to date test cases present within GIT repo at location: CSCI-3308-Team-3/farmerize/client/tests/
 
 ## Source documentation
 
