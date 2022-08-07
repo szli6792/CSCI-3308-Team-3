@@ -26,7 +26,9 @@
 
 ### Matt Fournier Individual Tasks:
 
-- 
+- Work on finializing the website
+- Work on the tests for the sql database and the website
+- Make sure that everything works for the presentation
 
 ### Szymon Ligas Individual Tasks:
 
