@@ -188,7 +188,7 @@ List of tests for verifying the rendering of the page:
 
 # Tests
 
-### (test_homepage_cards)   
+### (test_#pagename_data)   
 - Use case name: Test integrity of products displayed.
 - Description: Verify that the correct products and product summary data are listed for a given page, category, search, etc.
 - Pre-conditions: N/A
@@ -202,7 +202,7 @@ List of tests for verifying the rendering of the page:
 - Notes: N/A
 - Post-conditions: The webpage currently visited by a user should be recorded in the database.
    
-### (test_homepage_links)  
+### (test_#pagename_links)  
 - Use case name: Test linked pages.
 - Description: Verify that the any existing internal linked pages brings users to the correct location.
 - Pre-conditions: A given link redirects a user from one webpage to another webpage.
@@ -230,7 +230,7 @@ List of tests for verifying the rendering of the page:
 - Notes: N/A
 - Post-conditions: The webpage currently visited by a user should be recorded in the database.
    
-### (test_search)     
+### (test_#pagename_search)     
 - Use case name: Test search bar.
 - Description: Verify that the results page for a given product search lists appropriate items in the appropriate order.
 - Pre-conditions: User enters text into the search bar.
