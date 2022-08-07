@@ -39,17 +39,31 @@ https://github.com/szli6792/CSCI-3308-Team-3.git
 
 ## Include a Final Status Report
 
-
 What you completed:
-
+- Front/back end of home page linked to database (displays items & summary info from products table where special = featured, highest rated or most popular).
+- Front/back end of abut us page linked to database (user can enter email into subscription bar, which is stored in subscriptions table).
+- Front/back end of Results page linked to database (uer can enter text into search bar and results page will display matching items from products table).
+- Front/back end of product pages linked to database (displays detailed info about specific item from products table, users can enter review that is stores in reviews table).
+- Front/back end of sign up page linked to database (uer can enter their personal details into fields bars, which is stores in users table.
+- Ability for users to: view special items on home page, search for items from any page, click on items from home page and results pages to view detailed info, leave a review for item on product page, sign up to use website from sign up page, subscribe to mailing list from about us page.
+- Built database with Products, Reviews, Farms, Users and Subscriptions table. 
+- Selenium testing of website & database current pages/features.
+- Manual documentation of current pages/features.
 
 What you were in the middle of implementing:
-
+- Implementing sign in page.
+- Improving cross platform functionality/UI of website.
 
 What you had planned for the future:
-
+- Building my cart and wishlist pages with ability for users to add items to either page.
+- Implementing check out page with payment system API for users to purchase items.
+- Putting together sell product page for users to list items to sell.
 
 Any known problems (bugs, issues):
+- UI of website can be inconsistent across different search engines / devices / screen sizes.
+- Overall rating for each product does not update dynamically with each new review.
+- Rating stars backwards.
+
 
 ## Source code
 
