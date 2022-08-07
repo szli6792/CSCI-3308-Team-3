@@ -21,7 +21,7 @@ Page Description (include a mockup or hand drawn image of the page):
 
 Parameters needed for the page: 
 
-- Featued deal products, Most popular products, Highest rated products, User login status, Is user subscribed status.
+- Featued deal products, Most popular products, Highest rated products.
 
 Data needed to render the page: 
 
