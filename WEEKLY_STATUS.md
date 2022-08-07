@@ -6,7 +6,7 @@
 
 ## Weekly Schedule
 
-<img width="1569" alt="Screen Shot 2022-08-07 at 15 16 41" src="https://user-images.githubusercontent.com/97766930/183307390-3ef5d0d8-331b-4518-a63b-8063a889cc22.png">
+<img width="1587" alt="Screen Shot 2022-08-07 at 15 17 19" src="https://user-images.githubusercontent.com/97766930/183307413-398bd27e-72cc-41b3-8e86-048d84ea9741.png">
 
 ### Upcoming Project Milestone:
 
