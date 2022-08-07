@@ -1,6 +1,60 @@
 # CSCI-3308-Team-3
 
 
+## WEEKLY_STATUS.md (7th status report: Aug 7 - Aug 13) (Final Week)
+
+
+## Weekly Schedule
+
+<img width="1789" alt="Screen Shot 2022-08-07 at 14 59 01" src="https://user-images.githubusercontent.com/97766930/183306844-6a33244f-ce0d-4a0c-9447-9fd23252ad4e.png">
+
+### Upcoming Project Milestone:
+
+- Project milestone 8: Final Report (Aug 8 2022)
+- Project milestone 9: Peer Evaluation (Aug 10 2022)
+- Project milestone 10: Team Participation (Aug 10 2022) (Nothing to submit)
+
+### Group Tasks:
+
+- Create and finish editing final report submission for project milestone 8.
+- Conduct peer evaluations for project milestone 9.
+- Ensure all important aspects of code base are well documented.
+- Finish selenium testing of code base.
+
+### Ethan Brown Individual Tasks:
+
+- Inspect code base and add where necessary improved documentation of client side and sever side code.
+
+### Matt Fournier Individual Tasks:
+
+- Work on finializing the website
+- Work on the tests for the sql database and the website
+
+### Szymon Ligas Individual Tasks:
+
+- Work on testing any outstanding aspects of the website.
+
+### Current Development Stack:
+
+- React
+- Node.js
+- Express.js
+- SQL Server
+- AWS
+- Figma
+
+### Weekly Team Meeting Recording Folder:
+
+- https://drive.google.com/drive/folders/14q2pqgr1JMUOsawtKWv3xpfgOdnDOZH4?usp=sharing
+
+### UI Design
+
+- https://www.figma.com/file/89jOTItK5FA3VZr2vBV6Pe/Farm-Marketplace-UI?node-id=0%3A1
+
+- Currently designed pages: home page, reuslts page, categories page, product page, about us page, my account page.
+- To be designed pages: None.
+
+
 ## WEEKLY_STATUS.md (6th status report: July 31 - Aug 6)
 
 
