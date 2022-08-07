@@ -52,7 +52,7 @@ class TextprocTestCase(unittest.TestCase):
     #     myaccount = driver.find_element(By.XPATH, '//*[@id="root"]/div[3]/div[2]/div[2]/a[2]')
     #     self.assertEqual(myaccount.get_attribute('href'), 'http://ec2-54-183-139-130.us-west-1.compute.amazonaws.com/myaccount')
 
-    # def test_homepage_search(self):
+    # def test_search(self):
     #     driver = webdriver.Chrome(ChromeDriverManager().install())
     #     driver.get('http://ec2-54-183-139-130.us-west-1.compute.amazonaws.com/')
     #     delay = 3
@@ -66,21 +66,21 @@ class TextprocTestCase(unittest.TestCase):
     #         count +=1
     #     self.assertEqual(count, 5)
 
-    def test_subscribe(self):
-        driver = webdriver.Chrome(ChromeDriverManager().install())
-        driver.get('http://ec2-54-183-139-130.us-west-1.compute.amazonaws.com/aboutus')
-        delay = 3
-        test = WebDriverWait(driver, delay).until(EC.presence_of_element_located((By.XPATH, '//*[@id="root"]/div[2]/div[1]/div[2]')))
-        sub = driver.find_element(By.CLASS_NAME, 'email_input').send_keys('test@gmail.com')
-        driver.find_element(By.CLASS_NAME, 'sub_button').click()
-        conn = pymssql.connect('ec2-54-183-139-130.us-west-1.compute.amazonaws.com', 'farmerize_sa', 'pass1234', 'master')
-        cursor = conn.cursor(as_dict=True)
-        cursor.execute('SELECT * FROM farmerize.dbo.subscriptions WHERE email=%s', 'test@gmail.com')
-        item = cursor.fetchone()['Email']
-        cursor.execute('DELETE FROM farmerize.dbo.subscriptions WHERE email=%s', 'test@gmail.com')
-        conn.commit()
-        conn.close()
-        self.assertEqual(item, 'test@gmail.com')
+    # def test_subscribe(self):
+    #     driver = webdriver.Chrome(ChromeDriverManager().install())
+    #     driver.get('http://ec2-54-183-139-130.us-west-1.compute.amazonaws.com/aboutus')
+    #     delay = 3
+    #     test = WebDriverWait(driver, delay).until(EC.presence_of_element_located((By.XPATH, '//*[@id="root"]/div[2]/div[1]/div[2]')))
+    #     sub = driver.find_element(By.CLASS_NAME, 'email_input').send_keys('test@gmail.com')
+    #     driver.find_element(By.CLASS_NAME, 'sub_button').click()
+    #     conn = pymssql.connect('ec2-54-183-139-130.us-west-1.compute.amazonaws.com', 'farmerize_sa', 'pass1234', 'master')
+    #     cursor = conn.cursor(as_dict=True)
+    #     cursor.execute('SELECT * FROM farmerize.dbo.subscriptions WHERE email=%s', 'test@gmail.com')
+    #     item = cursor.fetchone()['Email']
+    #     cursor.execute('DELETE FROM farmerize.dbo.subscriptions WHERE email=%s', 'test@gmail.com')
+    #     conn.commit()
+    #     conn.close()
+    #     self.assertEqual(item, 'test@gmail.com')
 
     # def test_aboutus_links(self):
     #     driver = webdriver.Chrome(ChromeDriverManager().install())
