@@ -25,15 +25,15 @@ Parameters needed for the page:
 
 Data needed to render the page: 
 
-- Food data (Name, Rating, Farm that produced, Price, Picture), User information data (Logged in status, subscription status), Home page image.
+- Food data (Name, Rating, Farm that produced, Price, Picture), Home page image.
 
 Link destinations for the page: 
 
-- Home page, About us page, Categories page, My cart page, My wish list page, My account page.
+- About us page and My account page.
 
 List of tests for verifying the rendering of the page: 
 
-- (Test 6) Test user sign on, (Test 2) Test linked pages, (Test 4) Test pictures displayed, (Test 1) Test integrity of products displayed, (Test 3) Test subscription bar, (Test 5) Test search bar.
+- (test_homepage_links) Test linked pages, (test_homepage_img) Test homepage image displayed, (test_homepage_cards) Test integrity of products displayed, (test_homepage_search) Test search bar.
 
 - (**Tests described in detail at bottom**)
 
@@ -188,7 +188,7 @@ List of tests for verifying the rendering of the page:
 
 # Tests
 
-### (Test 1)   
+### (test_homepage_cards)   
 - Use case name: Test integrity of products displayed.
 - Description: Verify that the correct products and product summary data are listed for a given page, category, search, etc.
 - Pre-conditions: N/A
@@ -202,7 +202,7 @@ List of tests for verifying the rendering of the page:
 - Notes: N/A
 - Post-conditions: The webpage currently visited by a user should be recorded in the database.
    
-### (Test 2)  
+### (test_homepage_links)  
 - Use case name: Test linked pages.
 - Description: Verify that the any existing internal linked pages brings users to the correct location.
 - Pre-conditions: A given link redirects a user from one webpage to another webpage.
@@ -216,21 +216,7 @@ List of tests for verifying the rendering of the page:
 - Notes: N/A
 - Post-conditions: The webpage currently visited by a user should be recorded in the database. User redirected to an internal linked webpage.
     
-### (Test 3)     
-- Use case name: Test subscription bar.
-- Description: Verify that when users input their email adresses in the subscription bar that our subscriber database is updated with the correct info.
-- Pre-conditions: User enters text into the subscription bar.
-- Test steps: 
-1. Navigate to a specified webpage. 
-2. Input into the subscription bar "test@Farmerize.com" as well as a collection of predefined invalid email adresses.
-3. Check that the subscriber database contains "test@Farmerize.com" and none of the predefined list of invalid email adresses.
-- Expected result: User inputted valid email adress is added to the subscriber database and the inputted invalid email adresses are not. 
-- Actual result: User inputs email adresses into the subscription bar.
-- Status (Pass/Fail): Pass
-- Notes: N/A
-- Post-conditions: The webpage currently visited by a user should be recorded in the database. The subcription database should be updated.
-    
-### (Test 4)     
+### (test_homepage_img)     
 - Use case name: Test pictures displayed.
 - Description: Verify that the desired pictures are displayed on this webpage.
 - Pre-conditions: N/A
@@ -244,7 +230,7 @@ List of tests for verifying the rendering of the page:
 - Notes: N/A
 - Post-conditions: The webpage currently visited by a user should be recorded in the database.
    
-### (Test 5)     
+### (test_search)     
 - Use case name: Test search bar.
 - Description: Verify that the results page for a given product search lists appropriate items in the appropriate order.
 - Pre-conditions: User enters text into the search bar.
@@ -259,23 +245,9 @@ List of tests for verifying the rendering of the page:
 - Notes: N/A
 - Post-conditions: The webpage currently visited by a user should be recorded in the database. User redirected to reuslts page.
 
-### (Test 6)     
-- Use case name: Test user sign in.
-- Description: Verify an existing site users can sign in.
-- Pre-conditions: User has already created their account.
-- Test steps: 
-1. Navigate to the my account page, then the sign in button.
-2. Input a list of valid and invalid usernames/passwords.
-3. For all test cases, if usernames/passwords is within user database, check that the user is redirected to the home page and status changed to signed on.
-4. Else, check that an error message is displayed and user status is not signed on.
-- Expected result: User is redirected to the home page with a status changed to signed on if usernames/passwords valid, and an error message displayed if usernames/passwords invalid.
-- Actual result: User is redirected to the home page with change to a sign on status (if valid) or user stays on same page with error message (if invalid).
-- Status (Pass/Fail): Pass
-- Notes: N/A
-- Post-conditions: The webpage currently visited by a user should be recorded in the database. Signed in status should be maintained until user signs out, exits page, or is idle for > 10 minutes.
 
-### (Test 7)     
-- Use case name: Test create account bar.
+### (test_user_create)     
+- Use case name: Test create account.
 - Description: Verify that user is able to create an account after inputting valid minimum required details.
 - Pre-conditions: N/A
 - Test steps: 
