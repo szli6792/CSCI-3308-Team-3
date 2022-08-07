@@ -24,6 +24,7 @@
 ### Ethan Brown Individual Tasks:
 
 - Inspect code base and add where necessary improved documentation of client side and sever side code.
+- Document what aspects of project were completed, we're in the middle of completing and didnt get to.
 
 ### Matt Fournier Individual Tasks:
 
@@ -33,6 +34,7 @@
 ### Szymon Ligas Individual Tasks:
 
 - Work on testing any outstanding aspects of the website.
+- Document any major bugs in code.
 
 ### Current Development Stack:
 
