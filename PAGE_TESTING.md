@@ -58,19 +58,19 @@ Page Description (include a mockup or hand drawn image of the page):
 
 Parameters needed for the page: 
 
-- User login status, Is user subscribed status.
+- None
 
 Data needed to render the page: 
 
-- User information data (Logged in status, subscription status), Images illustrating the websites purpose, story and mission.
+- Images illustrating the websites purpose, story and mission.
 
 Link destinations for the page: 
 
-- Home page, About us page, Categories page, My cart page, My wish list page, My account page.
+- Home page, About us page, My account page.
 
 List of tests for verifying the rendering of the page:
 
-- (Test 6) Test user sign on, (Test 2) Test linked pages, (Test 4) Test pictures displayed, (Test 3) Test subscription bar.
+- (test_#pagename_links) Test linked pages, (test_#pagename_img) Test pictures displayed, (test_subscribe) Test subscription bar.
 
 - (**Tests described in detail at bottom**)
 
@@ -95,19 +95,19 @@ Page Description (include a mockup or hand drawn image of the page):
 
 Parameters needed for the page: 
 
-- User search variable, Results variables from database based on user search variable, User login status, Is user subscribed status. 
+- User search variable, Results variables from database based on user search variable
 
 Data needed to render the page: 
 
-- Specific food data (Pictures, Food name, Rating, Price, Description, Farm selling product), User information data (Logged in status, subscription status).
+- Specific food data (Pictures, Food name, Rating, Price, Description, Farm selling product).
 
 Link destinations for the page: 
 
-- Home page, About us page, Categories page, My cart page, My wish list page, My account page.
+- Home page, About us page, My account page.
 
 List of tests for verifying the rendering of the page:
 
-- (Test 6) Test user sign on, (Test 2) Test linked pages, (Test 1) Test integrity of products displayed, (Test 5) Test search bar.
+- (test_#pagename_links) Test linked pages, (test_#pagename_data) Test integrity of products displayed
 
 - (**Tests described in detail at bottom**)
 
@@ -132,19 +132,19 @@ Page Description (include a mockup or hand drawn image of the page):
 
 Parameters needed for the page: 
 
-- Food ID, User login status, Is user subscribed status. 
+- Food ID
 
 Data needed to render the page: 
 
-- Extended food properties (Pictures of food and farm, Information about food and farm, Rating and in depth review information from verified customers, Price), User information data (Logged in status, subscription status).
+- Extended food properties (Pictures of food and farm, Information about food and farm, Rating and in depth review information from verified customers, Price)
 
 Link destinations for the page: 
 
-- Home page, About us page, Categories page, My cart page, My wish list page, My account page.
+- Home page, About us page, My account page.
 
 List of tests for verifying the rendering of the page:
 
-- (Test 6) Test user sign on, (Test 2) Test linked pages, (Test 4) Test pictures displayed, (Test 1) Test integrity of products displayed.
+- (test-#pagename_links) Test linked pages, (test_#pagename_img) Test pictures displayed, (test_#pagename_data) Test integrity of products displayed.
 
 - (**Tests described in detail at bottom**)
  
@@ -157,7 +157,7 @@ Page Title:
 
 Page Description (include a mockup or hand drawn image of the page):
 
-- The my account page enables users not logged in to efficiently create a new account or the option to log in if they already have an account.
+- The my account page enables users not logged in to efficiently create a new account
 
 - Users are required to input basic account information including first name, last name, email, phone, adress, age, password and confirm password. Users can add more detailed information like payment details for buyers, farm details for sellers, etc, after creating their account on this page. There are seperate checkmark bars to distinguish users that are buyers, sellers or both, as these groups will need to enter differing more detailed info later on to fully utilize the website. This page like every page contains top and bottom page banners consistent across the platform.
 
@@ -173,15 +173,15 @@ Parameters needed for the page:
 
 Data needed to render the page: 
 
-- User information data (Logged in status, subscription status).
+- None
 
 Link destinations for the page: 
 
-- Home page, About us page, Categories page, My cart page, My wish list page, My account page, Reviews, Sign in page, Create account page.
+- Home page, About us page, My account page
 
 List of tests for verifying the rendering of the page:
 
-- (Test 6) Test user sign on, (Test 2) Test linked pages, (Test 7) Test create account bar.
+- (test_#pagename_links) Test linked pages, (test_user_create) Test create account bar.
 
 - (**Tests described in detail at bottom**)
 
@@ -230,7 +230,7 @@ List of tests for verifying the rendering of the page:
 - Notes: N/A
 - Post-conditions: The webpage currently visited by a user should be recorded in the database.
    
-### (test_#pagename_search)     
+### (test_search)     
 - Use case name: Test search bar.
 - Description: Verify that the results page for a given product search lists appropriate items in the appropriate order.
 - Pre-conditions: User enters text into the search bar.
