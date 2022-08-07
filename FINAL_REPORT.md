@@ -53,6 +53,7 @@ What you completed:
 What you were in the middle of implementing:
 - Implementing sign in page.
 - Improving cross platform functionality/UI of website.
+- Increasing size of database.
 
 What you had planned for the future:
 - Building my cart and wishlist pages with ability for users to add items to either page.
