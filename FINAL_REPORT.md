@@ -19,12 +19,6 @@ https://freedcamp.com/dashboard/home (Invitation link should have been sent to y
 <img width="1604" alt="Screen Shot 2022-08-07 at 15 46 14" src="https://user-images.githubusercontent.com/97766930/183308546-6158938d-0120-4253-b351-e3e8ab090298.png">
 <img width="1603" alt="Screen Shot 2022-08-07 at 15 46 37" src="https://user-images.githubusercontent.com/97766930/183308557-2370bba1-8b5a-4798-81cd-34cc6c2b1be1.png">
 
-
-## Project Timeline
-
-<img width="1264" alt="Screen Shot 2022-08-07 at 15 47 59" src="https://user-images.githubusercontent.com/97766930/183308609-8bce9433-11e7-4bc8-982d-70cc39df0168.png">
-
-
 ## Link to 5 minute video: a demo for a potential customer (could be same one you used in the presentation)
 
 https://drive.google.com/file/d/1r-SABk8GW4mblS_mccoUw2N0H33FIApU/view?usp=sharing
