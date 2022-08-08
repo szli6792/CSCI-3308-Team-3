@@ -6,6 +6,10 @@ import star from '../assets/star.svg';
 import placeholderImage1 from '../assets/placeholderImage1.svg';
 import placeholderImage2 from '../assets/placeholderImage2.svg';
 
+/*
+Product page.
+*/
+
 const Product = () => {
 
   const location = useLocation();
