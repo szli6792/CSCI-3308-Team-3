@@ -3,6 +3,10 @@ import Card from './Card';
 import './CardRow.css';
 import { useFetch } from '../utils/hook';
 
+/*
+Card Row bar (home page row of products).
+*/
+
 const Scroll = () => {
 
   const [featured] = useFetch('/api/sql/getfeatured')
