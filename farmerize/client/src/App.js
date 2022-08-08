@@ -13,7 +13,7 @@ import MyAccount from "./pages/MyAccount";
 import ResultsPage from './pages/Results';
 
 /* 
-PRIMARY STRUCTURE OF CODE BASE
+PRIMARY STRUCTURE OF CODE BASE 
 
 APP (This page): CSCI-3308-Team-3/farmerize/client/src/App.js --> Directory of pages within the website.
 
