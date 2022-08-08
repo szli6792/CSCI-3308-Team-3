@@ -1,5 +1,9 @@
 import React from 'react';
 
+/*
+Log in page. (Not finished)
+*/
+
 const Login = () => {
   return (
     <div>
