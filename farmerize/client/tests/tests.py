@@ -8,6 +8,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 import unittest
 import pymssql
 
+#Tests of web pages setup and features.
+
 class TextprocTestCase(unittest.TestCase):
 
     @classmethod
@@ -23,7 +25,8 @@ class TextprocTestCase(unittest.TestCase):
 
     def tearDown(self):
         pass
-
+    
+    #Tests homepage product summary data.
     def test_homepage_data(self):
         driver = webdriver.Chrome(ChromeDriverManager().install())
         driver.get('http://ec2-54-183-139-130.us-west-1.compute.amazonaws.com/')
@@ -35,6 +38,7 @@ class TextprocTestCase(unittest.TestCase):
             count += 1
         self.assertEqual(count, 15)
     
+    #Tests images displayed on homepage.
     def test_homepage_img(self):
         driver = webdriver.Chrome(ChromeDriverManager().install())
         driver.get('http://ec2-54-183-139-130.us-west-1.compute.amazonaws.com/')
@@ -42,7 +46,8 @@ class TextprocTestCase(unittest.TestCase):
         test = WebDriverWait(driver, delay).until(EC.presence_of_element_located((By.CLASS_NAME, 'card-name')))
         homepage_image =  driver.find_element(By.CLASS_NAME, "homepage-pic")
         self.assertEqual(homepage_image.get_attribute('src'), 'http://ec2-54-183-139-130.us-west-1.compute.amazonaws.com/images/farm.jpg')
-
+    
+    #Tests homepage links with footer directory.
     def test_homepage_links(self):
         driver = webdriver.Chrome(ChromeDriverManager().install())
         driver.get('http://ec2-54-183-139-130.us-west-1.compute.amazonaws.com/')
@@ -52,7 +57,8 @@ class TextprocTestCase(unittest.TestCase):
         self.assertEqual(aboutus.get_attribute('href'), 'http://ec2-54-183-139-130.us-west-1.compute.amazonaws.com/aboutus')
         myaccount = driver.find_element(By.XPATH, '//*[@id="root"]/div[3]/div[2]/div[2]/a[2]')
         self.assertEqual(myaccount.get_attribute('href'), 'http://ec2-54-183-139-130.us-west-1.compute.amazonaws.com/myaccount')
-
+    
+    #Tests search feature in header of all pages.
     def test_search(self):
         driver = webdriver.Chrome(ChromeDriverManager().install())
         driver.get('http://ec2-54-183-139-130.us-west-1.compute.amazonaws.com/')
@@ -66,7 +72,8 @@ class TextprocTestCase(unittest.TestCase):
         for i in elements:
             count +=1
         self.assertEqual(count, 5)
-
+    
+    #Tests subscribe feature within about us page.
     def test_subscribe(self):
         driver = webdriver.Chrome(ChromeDriverManager().install())
         driver.get('http://ec2-54-183-139-130.us-west-1.compute.amazonaws.com/aboutus')
@@ -82,7 +89,8 @@ class TextprocTestCase(unittest.TestCase):
         conn.commit()
         conn.close()
         self.assertEqual(item, 'test@gmail.com')
-
+    
+    #Tests about us page links within footer directory.
     def test_aboutus_links(self):
         driver = webdriver.Chrome(ChromeDriverManager().install())
         driver.get('http://ec2-54-183-139-130.us-west-1.compute.amazonaws.com/aboutus')
@@ -93,6 +101,7 @@ class TextprocTestCase(unittest.TestCase):
         myaccount = driver.find_element(By.XPATH, '//*[@id="root"]/div[3]/div[2]/div[2]/a[2]')
         self.assertEqual(myaccount.get_attribute('href'), 'http://ec2-54-183-139-130.us-west-1.compute.amazonaws.com/myaccount')
 
+    #Tests images on about us page.
     def test_aboutus_img(self):
         driver = webdriver.Chrome(ChromeDriverManager().install())
         driver.get('http://ec2-54-183-139-130.us-west-1.compute.amazonaws.com/aboutus')
@@ -103,7 +112,7 @@ class TextprocTestCase(unittest.TestCase):
         image2 = driver.find_element(By.XPATH, '//*[@id="root"]/div[2]/div[2]/div[2]')
         self.assertEqual(image2.get_attribute('style'), 'background-image: url("/static/media/mid_img.3d020d982e658a0bf2bd.png");')
     
-    #does not work
+    #does not work yet --> test of displayed products on results page after product search.
     # def test_results_links(self):
     #     driver = webdriver.Chrome(ChromeDriverManager().install())
     #     driver.get('http://ec2-54-183-139-130.us-west-1.compute.amazonaws.com/')
@@ -118,7 +127,7 @@ class TextprocTestCase(unittest.TestCase):
     #     myaccount = driver.find_element(By.XPATH, '//*[@id="root"]/div[3]/div[2]/div[2]/a[2]')
     #     self.assertEqual(myaccount.get_attribute('href'), 'http://ec2-54-183-139-130.us-west-1.compute.amazonaws.com/myaccount')
 
-    #doesnt work
+    #doesnt work --> Tests product detailed info on product link after clicking on a product.
     # def test_product_links(self):
     #     driver = webdriver.Chrome(ChromeDriverManager().install())
     #     driver.get('http://ec2-54-183-139-130.us-west-1.compute.amazonaws.com/')
@@ -130,6 +139,7 @@ class TextprocTestCase(unittest.TestCase):
     #     myaccount = driver.find_element(By.XPATH, '//*[@id="root"]/div[3]/div[2]/div[2]/a[2]')
     #     self.assertEqual(myaccount.get_attribute('href'), 'http://ec2-54-183-139-130.us-west-1.compute.amazonaws.com/myaccount')
 
+    #Tests sign up feature on sign up page.
     def test_user_create(self):
         driver = webdriver.Chrome(ChromeDriverManager().install())
         driver.get('http://ec2-54-183-139-130.us-west-1.compute.amazonaws.com/myaccount')
@@ -154,6 +164,7 @@ class TextprocTestCase(unittest.TestCase):
         conn.close()
         self.assertEqual(item, {'First': 'Test', 'Last': 'Test', 'Phone': '1231231234', 'Email': 'test@gmail.com', 'Address': '123 test lane', 'Age': 22, 'Password': 'test'})
 
+    #Tests sign up page links within footer directory.
     def test_myaccount_links(self):
         driver = webdriver.Chrome(ChromeDriverManager().install())
         driver.get('http://ec2-54-183-139-130.us-west-1.compute.amazonaws.com/myaccount')
