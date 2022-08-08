@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 /*
-Connects website to relational database on SQL Server.
+Connects website to relational database on SQL Server. 
 */
 
 function usePost(url) {
