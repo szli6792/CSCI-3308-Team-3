@@ -4,7 +4,7 @@ import './SearchBar.css';
 import search_img from '../assets/search.svg';
 
 /*
-Search bar component.
+Search bar component. 
 */
 
 const SearchBar = () => {
