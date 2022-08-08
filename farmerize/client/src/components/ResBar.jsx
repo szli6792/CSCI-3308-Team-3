@@ -4,6 +4,9 @@ import './ResBar.css';
 import test from '../assets/test.json';
 import { Component } from 'react';
 
+/*
+Results bar (representing a single result on results page).
+*/
 
 class ResBar extends Component {
 
