@@ -46,7 +46,6 @@ What you completed:
 - <img width="1438" alt="Screen Shot 2022-08-07 at 17 54 31" src="https://user-images.githubusercontent.com/97766930/183312436-9862dde8-be3b-4a06-9ea1-89c25c96a8d5.png">       
 - Front/back end of sign up page linked to database (uer can enter their personal details into fields bars, which is stores in users table).    
 - <img width="1444" alt="Screen Shot 2022-08-07 at 17 55 40" src="https://user-images.githubusercontent.com/97766930/183312494-1233196b-bde3-4ad0-81b3-5fa79eb99683.png">   
-- Ability for users to: view special items on home page, search for items from any page, click on items from home page and results pages to view detailed info, leave a review for item on product page, sign up to use website from sign up page, subscribe to mailing list from about us page.
 - Built database with Products, Reviews, Farms, Users and Subscriptions table.     
 - <img width="1248" alt="Screen Shot 2022-08-07 at 17 48 21" src="https://user-images.githubusercontent.com/97766930/183312268-8ed363ec-550e-4ebf-a46a-4ba377e24a80.png">    
 - Selenium testing of website & database current pages/features.   
