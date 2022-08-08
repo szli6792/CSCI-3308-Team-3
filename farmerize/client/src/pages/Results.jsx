@@ -5,6 +5,10 @@ import ResBar from '../components/ResBar.jsx';
 import { location, useLocation } from "react-router-dom";
 import { useFetch } from '../utils/hook';
 
+/*
+Results page.
+*/
+
 const ResultsPage = () => {
 
     const location = useLocation();
