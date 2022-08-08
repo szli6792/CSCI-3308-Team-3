@@ -2,6 +2,10 @@ import React, { useState }  from 'react';
 import './MyAccount.css';
 import { usePost } from '../utils/post';
 
+/*
+Sign up page.
+*/
+
 const MyAccount = () => {
 
 //init form input
