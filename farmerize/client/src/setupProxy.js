@@ -1,7 +1,7 @@
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
 /*
-Connects website to proxy middleware server.
+Connects website to proxy middleware server. 
 */
 
 module.exports = function(app) {
