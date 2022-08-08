@@ -2,6 +2,10 @@ import { React, useState }  from 'react';
 import { useFetch } from '../utils/hook';
 import './SubBar.css';
 
+/*
+Subscription bar component.
+*/
+
 const SubBar = () => {
 
     const [email, setEmail] = useState("");
