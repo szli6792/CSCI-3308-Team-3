@@ -7,6 +7,10 @@ import FoodData from '../FoodData.json';
 import heart from '../assets/heart.svg';
 import cart from '../assets/cart.svg';
 
+/*
+Header bar (header consistent across all webpages).
+*/
+
 const NavBar = () => {
   return (
     <div className="container">
