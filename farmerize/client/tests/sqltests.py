@@ -1,6 +1,8 @@
 import unittest
 import pymssql
 
+#Tests of web pages setup and features.
+
 class TextprocTestCase(unittest.TestCase):
 
     @classmethod
@@ -16,7 +18,8 @@ class TextprocTestCase(unittest.TestCase):
 
     def tearDown(self):
         pass
-
+    
+    #Tests individual product summary data on home page against products table.
     def test_products(self):
         conn = pymssql.connect('ec2-54-183-139-130.us-west-1.compute.amazonaws.com', 'farmerize_sa', 'pass1234', 'master')
         cursor = conn.cursor(as_dict=True)
@@ -26,6 +29,7 @@ class TextprocTestCase(unittest.TestCase):
         self.assertEqual(len(item), 15)
         self.assertEqual(item[0], {'ProductID': 1, 'FarmID': 1, 'Category': 'Fruit', 'Name': 'Apple', 'Img': 'apple.png', 'Price': 3.42, 'Description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nibh justo, aliquam vel scelerisque sed, ullamcorper ut neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra dolor.', 'About': 'Nam quis nulla. Integer malesuada. In in enim a arcu imperdiet malesuada. Sed vel lectus. Donec odio urna, tempus molestie, porttitor ut, iaculis quis, sem. Phasellus rhoncus. Aenean id metus id velit', 'Special': 0})
     
+    #Tests individual product summary data on home page against farms table.
     def test_farms(self):
         conn = pymssql.connect('ec2-54-183-139-130.us-west-1.compute.amazonaws.com', 'farmerize_sa', 'pass1234', 'master')
         cursor = conn.cursor(as_dict=True)
@@ -37,7 +41,8 @@ class TextprocTestCase(unittest.TestCase):
         self.assertEqual(item[2]['Name'], 'Low Lands')
         self.assertEqual(item[3]['Name'], 'Green Field')
         self.assertEqual(item[4]['Name'], 'County Fresh')
-
+    
+    #Tests subscribe feature on about us page against susbcriptions table.
     def test_subscribe(self):
         conn = pymssql.connect('ec2-54-183-139-130.us-west-1.compute.amazonaws.com', 'farmerize_sa', 'pass1234', 'master')
         cursor = conn.cursor(as_dict=True)
@@ -49,7 +54,8 @@ class TextprocTestCase(unittest.TestCase):
         conn.commit()
         conn.close()
         self.assertEqual(item['Email'], 'test@gmail.com')
-
+    
+    #Tests sign up feature on sign up page against users table.
     def test_users(self):
         conn = pymssql.connect('ec2-54-183-139-130.us-west-1.compute.amazonaws.com', 'farmerize_sa', 'pass1234', 'master')
         cursor = conn.cursor(as_dict=True)
@@ -61,7 +67,8 @@ class TextprocTestCase(unittest.TestCase):
         conn.commit()
         conn.close()
         self.assertEqual(item, {'First': 'Test', 'Last': 'Test', 'Phone': '1231231234', 'Email': 'test@gmail.com', 'Address': '123 test lane', 'Age': 22, 'Password': 'Password'})
-
+    
+    #Tests review feature on product opage against reviews table.
     def test_reviews(self):
         conn = pymssql.connect('ec2-54-183-139-130.us-west-1.compute.amazonaws.com', 'farmerize_sa', 'pass1234', 'master')
         cursor = conn.cursor(as_dict=True)
