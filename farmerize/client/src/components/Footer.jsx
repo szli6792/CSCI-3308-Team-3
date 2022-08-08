@@ -6,6 +6,10 @@ import mail from '../assets/li-mail.svg';
 import pin from '../assets/li-map-pin.svg';
 import phone from '../assets/li-phone.svg';
 
+/*
+Footer bar (footer consistent across all web pages).
+*/
+
 const Footer = () => {
   return (
     <div className="footer" class="footer">
