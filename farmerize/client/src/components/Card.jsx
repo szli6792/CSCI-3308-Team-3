@@ -2,6 +2,10 @@ import { React, Component } from 'react';
 import { Link } from "react-router-dom";
 import './Card.css';
 
+/*
+Card bar (home page individual product display).
+*/
+
 class Card extends Component {
 
   render() {
