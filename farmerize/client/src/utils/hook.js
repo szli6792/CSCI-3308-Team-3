@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
 
+/*
+Connects website to relational database on SQL Server.
+*/
+
 function useFetch(url) {
 
     const [data, setData] = useState([]);
