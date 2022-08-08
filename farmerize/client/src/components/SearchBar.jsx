@@ -3,6 +3,10 @@ import { useNavigate } from 'react-router-dom'
 import './SearchBar.css';
 import search_img from '../assets/search.svg';
 
+/*
+Search bar component.
+*/
+
 const SearchBar = () => {
 
   const [searchterm, setSearch] = useState("");
