@@ -5,6 +5,10 @@ import CardRow from '../components/CardRow';
 import Card from '../components/Card';
 import { usePost } from '../utils/post';
 
+/*
+Home page.
+*/
+
 const Home = () => {
   
   // const resp = usePost('/api/sql/subscribe?email="test@gmail.com"');
