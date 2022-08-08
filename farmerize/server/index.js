@@ -13,6 +13,9 @@ const config = {
 	}
 };
 
+/*
+Interfaces front end client side with back end server side / database.
+*/
 
 app.use(express.json());
 
