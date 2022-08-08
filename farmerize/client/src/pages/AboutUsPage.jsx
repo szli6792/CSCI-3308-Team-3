@@ -5,6 +5,9 @@ import SubBar from '../components/SubBar.jsx';
 import topimg from '../assets/top_img.png'
 import midimg from '../assets/mid_img.png'
 
+/*
+About us page.
+*/
 
 const AboutUsPage = () => {
   return (
