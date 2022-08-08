@@ -89,7 +89,7 @@ PAGES: CSCI-3308-Team-3/farmerize/client/src/pages/ --> Contains all the website
 - Sign up page: CSCI-3308-Team-3/farmerize/client/src/pages/MyAccount.jsx /
 
 COMPONENTS: CSCI-3308-Team-3/farmerize/client/src/components/ --> Contains sections of code that is likely to be reused in multiple places to save space
-and time, broken down into javascript (page.jsx) and css (page.css) files.
+and time, broken down into javascript (component.jsx) and css (component.css) files.
 - Header bar: CSCI-3308-Team-3/farmerize/client/src/components/NavBar.jsx /
 - Footer bar: CSCI-3308-Team-3/farmerize/client/src/components/Footer.jsx /
 - Sub bar: CSCI-3308-Team-3/farmerize/client/src/components/SubBar.jsx /
